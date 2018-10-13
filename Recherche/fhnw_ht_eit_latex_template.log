@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.9.16)  12 OCT 2018 13:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.9.16)  13 OCT 2018 16:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2016,9 +2016,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
 (./sections/echtheitserklaerung.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
-Package rerunfilecheck Info: File `fhnw_ht_eit_latex_template.out' has not chan
-ged.
-(rerunfilecheck)             Checksum: 64F80FBCD1B0EAB5D71E33918872D474;2232.
+
+
+Package rerunfilecheck Warning: File `fhnw_ht_eit_latex_template.out' has chang
+ed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `fhnw_ht_eit_latex_template.out':
+(rerunfilecheck)             Before: 64F80FBCD1B0EAB5D71E33918872D474;2232
+(rerunfilecheck)             After:  00F8EE22A593F2D75A51CF593DB80245;2239.
 Package logreq Info: Writing requests to 'fhnw_ht_eit_latex_template.run.xml'.
 \openout1 = `fhnw_ht_eit_latex_template.run.xml'.
 
@@ -2038,7 +2045,7 @@ mf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type
 fb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2018
 /texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2018/texmf-dist/fonts/
 type1/public/lm/lmssbx10.pfb>
-Output written on fhnw_ht_eit_latex_template.pdf (12 pages, 349367 bytes).
+Output written on fhnw_ht_eit_latex_template.pdf (12 pages, 353377 bytes).
 PDF statistics:
  279 PDF objects out of 1000 (max. 8388607)
  242 compressed objects within 3 object streams

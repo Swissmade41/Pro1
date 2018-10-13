@@ -5,7 +5,7 @@
 \babel@toc {ngerman}{}
 \contentsline {section}{\numberline {1}Einleitung}{1}{section.1}
 \contentsline {subsection}{\numberline {1.1}Ausgangslage}{1}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Zielsetzung}{1}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.2}Ziel des Dokuments}{1}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}Produktbedingungen}{1}{subsection.1.3}
 \contentsline {section}{\numberline {2}Recherche}{2}{section.2}
 \contentsline {subsection}{\numberline {2.1}Anwendungsbereiche}{2}{subsection.2.1}
