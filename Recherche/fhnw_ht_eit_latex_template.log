@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.9.16)  12 OCT 2018 13:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.9.16)  17 OCT 2018 18:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1929,14 +1929,14 @@ LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 9.
 (c:/texlive/2018/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<fhnwlogo.pdf, id=135, 183.81773pt x 28.4543pt>
+<fhnwlogo.pdf, id=119, 183.81773pt x 28.4543pt>
 File: fhnwlogo.pdf Graphic file (type pdf)
 <use fhnwlogo.pdf>
 Package pdftex.def Info: fhnwlogo.pdf  used on input line 14.
 (pdftex.def)             Requested size: 220.57736pt x 34.1433pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 14.
-<./graphics/titelbild.pdf, id=136, 762.85pt x 401.5pt>
+<./graphics/titelbild.pdf, id=120, 762.85pt x 401.5pt>
 File: ./graphics/titelbild.pdf Graphic file (type pdf)
 <use ./graphics/titelbild.pdf>
 Package pdftex.def Info: ./graphics/titelbild.pdf  used on input line 19.
@@ -1974,12 +1974,75 @@ l.49 \include{sections/einleitung}
 
 
 ])
-(./sections/subsections/energie.tex [3
+(./sections/subsections/energie.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
-]) (./sections/subsections/turbine.tex
-[4
+ []
 
-]) (./sections/subsections/infrastrukturen.tex [5
+<./graphics/Gleichdruckturbine.png, id=190, 220.825pt x 272.01625pt>
+File: ./graphics/Gleichdruckturbine.png Graphic file (type png)
+<use ./graphics/Gleichdruckturbine.png>
+Package pdftex.def Info: ./graphics/Gleichdruckturbine.png  used on input line 
+14.
+(pdftex.def)             Requested size: 142.26378pt x 175.25197pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--31
+
+ []
+
+[3
+
+ <./graphics/Gleichdruckturbine.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 46--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--50
+
+ []
+
+<./graphics/Leistungsberechnung.png, id=199, 435.12563pt x 260.975pt>
+File: ./graphics/Leistungsberechnung.png Graphic file (type png)
+<use ./graphics/Leistungsberechnung.png>
+Package pdftex.def Info: ./graphics/Leistungsberechnung.png  used on input line
+ 55.
+(pdftex.def)             Requested size: 284.52756pt x 170.65913pt.
+<./graphics/Fallgeschwindigkeit.png, id=201, 266.9975pt x 113.92563pt>
+File: ./graphics/Fallgeschwindigkeit.png Graphic file (type png)
+<use ./graphics/Fallgeschwindigkeit.png>
+Package pdftex.def Info: ./graphics/Fallgeschwindigkeit.png  used on input line
+ 61.
+(pdftex.def)             Requested size: 284.52756pt x 121.41768pt.
+[4 <./graphics/Leistungsberechnung.png> <./graphics/Fallgeschwindigkeit.png>])
+
+! LaTeX Error: File `sections/subsections/turbine.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+(./sections/subsections/infrastrukturen.tex [5
 
 ])
 (./sections/subsections/integrationen_bestehende_systeme.tex [6
@@ -2018,30 +2081,34 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `fhnw_ht_eit_latex_template.out' has not chan
 ged.
-(rerunfilecheck)             Checksum: 64F80FBCD1B0EAB5D71E33918872D474;2232.
+(rerunfilecheck)             Checksum: FC67A8688DC8DD2FEACEBD66A6D99283;1951.
 Package logreq Info: Writing requests to 'fhnw_ht_eit_latex_template.run.xml'.
 \openout1 = `fhnw_ht_eit_latex_template.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 48835 strings out of 492641
- 1009809 string characters out of 6133116
- 1558901 words of memory out of 5000000
- 51939 multiletter control sequences out of 15000+600000
- 586274 words of font info for 56 fonts, out of 8000000 for 9000
+ 48858 strings out of 492641
+ 1010316 string characters out of 6133116
+ 1558898 words of memory out of 5000000
+ 51959 multiletter control sequences out of 15000+600000
+ 598861 words of font info for 63 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 64i,8n,72p,1151b,2285s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}<c:/texlive/2018/tex
-mf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type
-1/public/lm/lmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.p
-fb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2018
-/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2018/texmf-dist/fonts/
-type1/public/lm/lmssbx10.pfb>
-Output written on fhnw_ht_eit_latex_template.pdf (12 pages, 349367 bytes).
+ 64i,10n,72p,1151b,2285s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2018/tex
+mf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2018/texmf-dist/fonts/enc/
+dvips/lm/lm-mathit.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
+}<c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2018/
+texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/t
+ype1/public/lm/lmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr1
+2.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2
+018/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2018/texmf-dist/fonts
+/type1/public/lm/lmro10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/l
+mssbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
+Output written on fhnw_ht_eit_latex_template.pdf (12 pages, 489684 bytes).
 PDF statistics:
- 279 PDF objects out of 1000 (max. 8388607)
- 242 compressed objects within 3 object streams
- 46 named destinations out of 1000 (max. 500000)
- 279 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 281 PDF objects out of 1000 (max. 8388607)
+ 236 compressed objects within 3 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 262 words of extra memory for PDF output out of 10000 (max. 10000000)
 
