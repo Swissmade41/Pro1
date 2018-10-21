@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.9.16)  17 OCT 2018 18:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.9.16)  19 OCT 2018 09:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2045,38 +2045,66 @@ Enter file name:
 (./sections/subsections/infrastrukturen.tex [5
 
 ])
-(./sections/subsections/integrationen_bestehende_systeme.tex [6
+(./sections/subsections/integrationen_bestehende_systeme.tex
 
-])
-(./sections/subsections/sicherheit.tex [7
+! Package inputenc Error: Unicode character φ (U+3C6)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...enden Wirkfaktor von beispielsweise cos φ
+                                                   = 0,95 (induktiv) vorgebe...
+
+? 
+[6
+
+] [7]) (./sections/subsections/sicherheit.tex
+! Undefined control sequence.
+l.12 \subsubsubsection
+                      {Leitungen}
+? 
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 13.
+(c:/texlive/2018/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+! Undefined control sequence.
+l.15 \subsubsubsection
+                      {Abgasen}
+? 
+! Undefined control sequence.
+l.18 \subsubsubsection
+                      {Wartung}
+? 
+[8
 
 ]))
 \openout2 = `sections/fazit.aux'.
 
- (./sections/fazit.tex) [8
+ (./sections/fazit.tex) [9
 
 
 
 ]
 \openout2 = `sections/quellen.aux'.
 
-
-(./sections/quellen.tex) [9
+ (./sections/quellen.tex) [10
 
 
 ]
 \openout2 = `sections/echtheitserklaerung.aux'.
 
- (./sections/echtheitserklaerung.tex) [10
+
+(./sections/echtheitserklaerung.tex) [11
 
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
-
-(./fhnw_ht_eit_latex_template.aux (./sections/einleitung.aux)
-(./sections/recherche.aux) (./sections/fazit.aux) (./sections/quellen.aux)
-(./sections/echtheitserklaerung.aux))
+ (./fhnw_ht_eit_latex_template.aux
+(./sections/einleitung.aux) (./sections/recherche.aux) (./sections/fazit.aux)
+(./sections/quellen.aux) (./sections/echtheitserklaerung.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `fhnw_ht_eit_latex_template.out' has not chan
@@ -2088,27 +2116,28 @@ Package logreq Info: Writing requests to 'fhnw_ht_eit_latex_template.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 48858 strings out of 492641
- 1010316 string characters out of 6133116
- 1558898 words of memory out of 5000000
- 51959 multiletter control sequences out of 15000+600000
- 598861 words of font info for 63 fonts, out of 8000000 for 9000
+ 48891 strings out of 492641
+ 1011147 string characters out of 6133116
+ 1560899 words of memory out of 5000000
+ 51987 multiletter control sequences out of 15000+600000
+ 599226 words of font info for 64 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  64i,10n,72p,1151b,2285s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2018/tex
-mf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2018/texmf-dist/fonts/enc/
-dvips/lm/lm-mathit.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
-}<c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2018/
-texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/t
-ype1/public/lm/lmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr1
-2.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2
-018/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2018/texmf-dist/fonts
-/type1/public/lm/lmro10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/l
-mssbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on fhnw_ht_eit_latex_template.pdf (12 pages, 489684 bytes).
+{c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/texlive/2018/te
+xmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvi
+ps/lm/lm-mathsy.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.en
+c}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}<c:/texlive/2018/tex
+mf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type
+1/public/lm/lmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.
+pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/201
+8/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2018/texmf-dist/fonts/
+type1/public/lm/lmr8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmro
+10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texli
+ve/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
+Output written on fhnw_ht_eit_latex_template.pdf (13 pages, 496687 bytes).
 PDF statistics:
- 281 PDF objects out of 1000 (max. 8388607)
- 236 compressed objects within 3 object streams
- 42 named destinations out of 1000 (max. 500000)
+ 290 PDF objects out of 1000 (max. 8388607)
+ 244 compressed objects within 3 object streams
+ 43 named destinations out of 1000 (max. 500000)
  262 words of extra memory for PDF output out of 10000 (max. 10000000)
 

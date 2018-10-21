@@ -1,0 +1,115 @@
+% Encoding: UTF-8
+
+@Electronic{natbib,
+  Title                    = {Reference sheet for natbib usage},
+  Author                   = {Daly, Patrick W.},
+  HowPublished             = {natbib documentation},
+  urldate                  = {March 7, 2016},
+  Url                      = {http://www.pirbot.com/mirrors/ctan/macros/latex/contrib/natbib/natnotes.pdf},
+  Year                     = {2016},
+  Owner                    = {Hanspeter},
+  Timestamp                = {2016.03.07}
+}
+
+@Article{Mason1956,
+  author    = {Mason, S.J.},
+  title     = {Feedback Theory-Further Properties of Signal Flow Graphs},
+  journal   = {Proceedings of the IRE},
+  year      = {1956},
+  volume    = {44},
+  number    = {7},
+  pages     = {920--926},
+  doi       = {10.1109/JRPROC.1956.275147},
+  url       = {http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4052126},
+  owner     = {Hanspeter},
+  timestamp = {2015.08.24},
+}
+
+@Article{Mason1953,
+  author    = {Mason, S.J.},
+  title     = {Feedback Theory-Some Properties of Signal Flow Graphs},
+  journal   = {Proceedings of the IRE},
+  year      = {1953},
+  volume    = {41},
+  number    = {9},
+  pages     = {1144--1156},
+  doi       = {10.1109/JRPROC.1953.274449},
+  url       = {http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4051460},
+  owner     = {Hanspeter},
+  timestamp = {2015.08.24},
+}
+
+@Book{Kopka2003,
+  author    = {Kopka, Helmut and Daly, Patrick W},
+  title     = {Guide to LATEX},
+  year      = {2003},
+  publisher = {Pearson Education},
+}
+
+@Misc{l2kurz,
+  author = {Daniel, M and Gundlach, P and Schmidt, W and Knappen, J and Partl, H and Hyna, I},
+  title  = {\LaTeXe-{K}urzbeschreibung},
+  year   = {2018},
+  date   = {2018-04-08},
+}
+
+@Misc{doc_mathmode,
+  author = {Voss, H},
+  title  = {Mathematical Typesetting with Latex},
+  year   = {2017},
+  date   = {2017-08-09},
+}
+
+@Electronic{biblatex_biber,
+  title   = {biblatex in a nutshell (for beginners)},
+  url     = {https://tex.stackexchange.com/questions/13509/biblatex-in-a-nutshell-for-beginners},
+  urldate = {2018-05-18},
+}
+
+@Electronic{jabref,
+  author  = {{Jabref Development Team}},
+  title   = {JabRef},
+  url     = {http://www.jabref.org/},
+  urldate = {2018-05-18},
+}
+
+@Article{Schmid2018,
+  author    = {Schmid, Hanspeter and Huber, Alex},
+  title     = {Analysis of switched-capacitor circuits using driving-point signal-flow graphs},
+  journal   = {Analog Integrated Circuits and Signal Processing},
+  year      = {2018},
+  date      = {2018-03-01},
+  month     = mar,
+  issn      = {1573-1979},
+  doi       = {10.1007/s10470-018-1131-7},
+  abstract  = {This paper extends the driving-point signal-flow graphs to switched-capacitor (SC) circuits by introducing a new theoretical element: an auxiliary voltage source that transfers no charge. In contrast to existing SFG methods, our method has no restrictions as to what types of SC circuits can be analysed, it requires no equivalent circuits or tables, and it works with two-phase as well as multi-phase SC circuits of any complexity. Compared to charge-equation matrix methods, it requires more effort, but is better suited for hand analysis because it makes causal relationships visible. Three illustrative examples are given to show the efficiency of the method and present a few application hints: a voltage doubler, the standard SC integrator, and a four-phase circuit simulating an inductor.},
+  publisher = {Springer},
+}
+
+@Article{Schmid2003,
+  author        = {Schmid, Hanspeter},
+  title         = {Why ‘current mode’ does not guarantee good performance},
+  journal       = {Analog Integrated Circuits and Signal Processing},
+  year          = {2003},
+  volume        = {35},
+  number        = {1},
+  pages         = {79--90},
+  __markedentry = {[hanspi:]},
+  publisher     = {Springer},
+}
+
+@Article{Tellegen1954,
+  author        = {Tellegen, BDH},
+  title         = {La recherche pour una s{\'e}rie compl{\`e}te d’{\'e}l{\'e}ments de circuit ideaux non-lin{\'e}aires},
+  journal       = {Rendiconti del seminario matematico e fisico di Milano},
+  year          = {1954},
+  volume        = {25},
+  number        = {1},
+  pages         = {134--144},
+  __markedentry = {[hanspi:6]},
+  publisher     = {Springer},
+}
+
+@Comment{jabref-meta: databaseType:biblatex;}
+
+% Encoding: UTF-8
