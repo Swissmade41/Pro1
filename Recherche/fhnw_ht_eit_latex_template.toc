@@ -27,7 +27,6 @@
 \contentsline {subsection}{\numberline {2.5}Sicherheit}{8}{subsection.2.5}
 \contentsline {subsubsection}{\numberline {2.5.1}Recherchegrund}{8}{subsubsection.2.5.1}
 \contentsline {subsubsection}{\numberline {2.5.2}Ergebnisse}{8}{subsubsection.2.5.2}
-\contentsline {subsubsection}{\numberline {2.5.3}Fazit}{8}{subsubsection.2.5.3}
 \contentsline {section}{\numberline {3}Zusammenfassung}{9}{section.3}
 \contentsline {section}{\numberline {4}Quellenverzeichnis}{10}{section.4}
 \contentsline {section}{\numberline {5}Echtheitserkl\IeC {\"a}rung}{11}{section.5}
