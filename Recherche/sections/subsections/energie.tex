@@ -9,36 +9,43 @@ Mit der Recherche über die Energie können wir abschätzen wie viel Energie gew
 Um Energie aus fliessendem Wasser zu gewinnen gibt es drei unterschiedliche Möglichkeiten: Das Wasserrad, die Gleichdruckturbine und die Überdruckturbine. 
 
 \paragraph{Wasserrad}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=4cm]{Wasserrad.jpg}
+	\caption{Wasserrad}
+	\label{fig:Wasserrad}
+\end{figure}
 
-\begin{center}
-\includegraphics[width=3.5cm]{Wasserrad.jpg}
-\end{center}
+Das Wasserrad wird in fliessende Gewässer eingesetzt. Wie in der Abbildung \ref{fig:Wasserrad} \nameref{fig:Wasserrad} zu sehen fliesst das Wasser entweder von oben in die Schaufeln und das Rad beginnt sich durch das Gewicht des Wassers zu drehen, oder das Rad wird über dem Wasser platziert und das Rad bewegt sich durch den Fluss des Wassers.
 
-Das Wasserrad wird in fliessende Gewässer eingesetzt. Entweder  fliesst das Wasser von oben in die Schaufeln und das Rad beginnt sich durch das Gewicht des Wassers zu drehen, oder das Rad wird über dem Wasser platziert und das Rad bewegt sich durch den Fluss des Wassers.
-
-\bigskip
+\newpage
 
 \paragraph{Überdruckturbine}
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=4cm]{Ueberdruckturbine.png}
+	\caption{Ueberdruckturbine}
+	\label{fig:Ueberdruckturbine}
+\end{figure}
 
-\begin{center}
-\includegraphics[width=4cm]{Ueberdruckturbine.png}
-\end{center}
-
-Bei der Überdruckturbine sind die Schaufeln so ausgerichtet, dass sie beim Fluss des Wassers auf die Seite gedrückt werden und eine Drehbewegung resultiert. Dabei hat es vor den Schaufeln einen höheren Druck als hinter den Schaufeln
+Bei der Überdruckturbine, zu sehen in der Abbildung \ref{fig:Ueberdruckturbine} \nameref{fig:Ueberdruckturbine} sind die Schaufeln so ausgerichtet, dass sie beim Fluss des Wassers auf die Seite gedrückt werden und eine Drehbewegung resultiert. Dabei hat es vor den Schaufeln einen höheren Druck als hinter den Schaufeln
 
 \paragraph{Gleichdruckturbine}
 
-\begin{center}
-\includegraphics[width=5cm]{Gleichdruckturbine.png}
-\end{center}
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=5cm]{Gleichdruckturbine.png}
+	\caption{Gleichdruckturbine}
+	\label{fig:Gleichdruckturbine}
+\end{figure}
 
-Das Wasser wird von einer gewissen Höhe in eine Fallleitung nach unten befördert. Die potenzielle Energie des Wassers wird dabei in kinetische Energie umgewandelt und das Wasser trifft mit einer Geschwindigkeit unten aus. Um diese Energie zu nutzen wird der Wasserstrahl auf die Schaufeln der Pelton-Turbine gerichtet, die anschliessend zu drehen beginnt. 
+In der Abbildung \ref{fig:Gleichdruckturbine} \nameref{fig:Gleichdruckturbine} ist eine Gleichdruckturbine zu sehen. Für die Turbine wird das Wasser von einer gewissen Höhe in eine Fallleitung nach unten befördert. Die potenzielle Energie des Wassers wird dabei in kinetische Energie umgewandelt und das Wasser trifft mit einer Geschwindigkeit unten aus. Um diese Energie zu nutzen wird der Wasserstrahl auf die Schaufeln der Pelton-Turbine gerichtet, die anschliessend zu drehen beginnt. 
 
 \paragraph{Entscheid}
 
 Wir haben uns entschieden, dass eine Gleichdruckturbine (Pelton-Turbine) für unsere Anwendung am besten geeignet ist. Der grosse Vorteil der Pelton-Turbine ist, dass das Wasser keine enge Stelle durchqueren muss, sowie dies bei einer Überdruckturbine der Fall wäre und ist somit besser gegenüber Verstopfungen geschützt.
 
-\bigskip
+\newpage
 
 \paragraph{Berechnungen}
 
@@ -59,8 +66,6 @@ Die Energie die gewonnen werden kann wird mit folgender Formel berrechnet:
 
 Die Energie \(E\) hat die Einheit \si{J}. Die Einheit der Geschwindigkeit \(v\) ist \si{m/s} und die Masse \(m\) hat die Einheit \si{kg}
 
-\newpage
-
 Um die Leistung zu erhalten, muss die Masse pro Zeit(1s) einberechnet werden. Die Masse wird  mit der Dichte und dem Volumenstrom ersetzt.
 
 \begin{center}
@@ -72,17 +77,26 @@ Die Leistung \(P\) hat die Einheit \si{W}. Der Volumentstrom \(Q\) hat die Einhe
 \bigskip
 
 
-Mit diesen physikalischen Grundlagen kann nun die Leistung in Abhängigkeit der Höhe und des Volumenstromes berechnet werden. 
+Mit diesen physikalischen Grundlagen kann nun die Leistung in Abhängigkeit der Höhe und des Volumenstromes berechnet werden.  Die Berechnungen sind in der Tabelle  \ref{tab:Leistungsberechnung} \nameref{tab:Leistungsberechnung} ersichtlich.
 
-\begin{center}
-\includegraphics[width=10cm]{Leistungsberechnung.png}
-\end{center}
+\begin{table} [H]
+	\centering
+	\includegraphics[width=13cm]{Leistungsberechnung.png}
+	\caption{Leistungsberechnung}
+	\label{tab:Leistungsberechnung}
+\end{table}
 
-Dies ist nur die theoretische Leistung. Mit der Reibung am Rohr und dem Widerstand der Luftsäule wird das Wasser stark abgebrämst. Gemäss dem Informationszentrum Entwässerungstechnik Guss e.V. (IZEG), die Versuche mit der Fallgeschwindigkeit durchgeführt haben, wird das Wasser bereits nach 15\si{m} nicht mehr mehrklich schneller.
+\newpage
 
-\begin{center}
-\includegraphics[width=10cm]{Fallgeschwindigkeit.png}
-\end{center}
+Dies ist nur die theoretische Leistung. Mit der Reibung am Rohr und dem Widerstand der Luftsäule wird das Wasser stark abgebrämst. Gemäss dem Informationszentrum Entwässerungstechnik Guss e.V. (IZEG), die Versuche mit der Fallgeschwindigkeit durchgeführt haben, wird das Wasser bereits nach 15\si{m} nicht mehr mehrklich schneller. Dies ist in der Abbildung \ref{fig:Fallgeschwindigkeit} \nameref{fig:Fallgeschwindigkeit} gut ersichtlich.
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=10cm]{Fallgeschwindigkeit.png}
+	\caption{Fallgeschwindigkeit}
+	\label{fig:Fallgeschwindigkeit}
+\end{figure}
+
 
 Mit der Endgeschwindigkeit von 10 \si{m/s} wird bei einem Volumenstrom von 0.1 \si{m^3/s} noch 5 \si{kW} erzeugt.
 
