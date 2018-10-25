@@ -19,6 +19,20 @@
   url    = {https://www.geberit.ch/produkte/rohrleitungssysteme-entwaesserung/geberit-pe-abwasserrohre/},
 }
 
+@Online{,
+  author = {{Konradin Medien GmbH}},
+  date   = {2018-10-24},
+  url    = {https://www.wissen.de},
+  note   = {Wasserrad},
+}
+
+@Online{,
+  author = {Wikipedia},
+  date   = {2018-10-24},
+  url    = {https://de.wikipedia.org},
+  note   = {Bilder Über -Unterdruckturbine},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
 
 % Encoding: UTF-8
