@@ -11,23 +11,22 @@
 \contentsline {subsection}{\numberline {2.1}Anwendungsbereiche}{2}{subsection.2.1}
 \contentsline {subsubsection}{\numberline {2.1.1}Recherchegrund}{2}{subsubsection.2.1.1}
 \contentsline {subsubsection}{\numberline {2.1.2}Ergebnisse}{2}{subsubsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.3}Fazit}{2}{subsubsection.2.1.3}
-\contentsline {subsection}{\numberline {2.2}Energie}{3}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Recherchegrund}{3}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Ergebnisse}{3}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Fazit}{5}{subsubsection.2.2.3}
-\contentsline {subsection}{\numberline {2.3}Infrastrukturen}{6}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Recherchegrund}{6}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Ergebnisse}{6}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}Fazit}{6}{subsubsection.2.3.3}
-\contentsline {subsection}{\numberline {2.4}Integrationen Bestehende Systeme}{7}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}Recherchegrund}{7}{subsubsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.2}Ergebnisse}{7}{subsubsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.3}Fazit}{8}{subsubsection.2.4.3}
-\contentsline {subsection}{\numberline {2.5}Sicherheit}{9}{subsection.2.5}
-\contentsline {subsubsection}{\numberline {2.5.1}Recherchegrund}{9}{subsubsection.2.5.1}
-\contentsline {subsubsection}{\numberline {2.5.2}Ergebnisse}{9}{subsubsection.2.5.2}
-\contentsline {subsubsection}{\numberline {2.5.3}Fazit}{9}{subsubsection.2.5.3}
-\contentsline {section}{\numberline {3}Zusammenfassung}{10}{section.3}
-\contentsline {section}{\numberline {4}Quellenverzeichnis}{11}{section.4}
-\contentsline {section}{\numberline {5}Echtheitserkl\IeC {\"a}rung}{12}{section.5}
+\contentsline {subsubsection}{\numberline {2.1.3}Fazit}{3}{subsubsection.2.1.3}
+\contentsline {subsection}{\numberline {2.2}Energie}{4}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Recherchegrund}{4}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Ergebnisse}{4}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Fazit}{7}{subsubsection.2.2.3}
+\contentsline {subsection}{\numberline {2.3}Infrastrukturen}{8}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Recherchegrund}{8}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Ergebnisse}{8}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Fazit}{8}{subsubsection.2.3.3}
+\contentsline {subsection}{\numberline {2.4}Integrationen Bestehende Systeme}{9}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Recherchegrund}{9}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Ergebnisse}{9}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Fazit}{10}{subsubsection.2.4.3}
+\contentsline {subsection}{\numberline {2.5}Sicherheit}{11}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}Recherchegrund}{11}{subsubsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.2}Ergebnisse}{11}{subsubsection.2.5.2}
+\contentsline {subsubsection}{\numberline {2.5.3}Fazit}{11}{subsubsection.2.5.3}
+\contentsline {section}{\numberline {3}Zusammenfassung}{12}{section.3}
+\contentsline {section}{\numberline {4}Quellenverzeichnis}{13}{section.4}
