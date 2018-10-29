@@ -53,7 +53,16 @@ Version                    	&    1.0 %Normally not used!
 \include{sections/einleitung}
 \include{sections/recherche}
 \include{sections/fazit}
-\include{sections/quellen}
+
+%%---BIBLIOGRAPHY------------------------------------------------------------------------
+
+
+{\sloppypar
+\printbibliography[heading=bibintoc]
+%\label{sec:lit}
+%\selectlanguage{english}				%ngerman or english
+\printbibliography
+}
 
 %%---NOTES for DEBUG---------------------------------------------------------------------
 \ifdraft{%Do this only if mode=draft
