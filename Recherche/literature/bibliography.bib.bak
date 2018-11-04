@@ -1,65 +1,5 @@
 % Encoding: UTF-8
 
-@Electronic{natbib,
-  Title                    = {Reference sheet for natbib usage},
-  Author                   = {Daly, Patrick W.},
-  HowPublished             = {natbib documentation},
-  urldate                  = {March 7, 2016},
-  Url                      = {http://www.pirbot.com/mirrors/ctan/macros/latex/contrib/natbib/natnotes.pdf},
-  Year                     = {2016},
-  Owner                    = {Hanspeter},
-  Timestamp                = {2016.03.07}
-}
-
-@Article{Mason1956,
-  author    = {Mason, S.J.},
-  title     = {Feedback Theory-Further Properties of Signal Flow Graphs},
-  journal   = {Proceedings of the IRE},
-  year      = {1956},
-  volume    = {44},
-  number    = {7},
-  pages     = {920--926},
-  doi       = {10.1109/JRPROC.1956.275147},
-  url       = {http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4052126},
-  owner     = {Hanspeter},
-  timestamp = {2015.08.24},
-}
-
-@Article{Mason1953,
-  author    = {Mason, S.J.},
-  title     = {Feedback Theory-Some Properties of Signal Flow Graphs},
-  journal   = {Proceedings of the IRE},
-  year      = {1953},
-  volume    = {41},
-  number    = {9},
-  pages     = {1144--1156},
-  doi       = {10.1109/JRPROC.1953.274449},
-  url       = {http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4051460},
-  owner     = {Hanspeter},
-  timestamp = {2015.08.24},
-}
-
-@Book{Kopka2003,
-  author    = {Kopka, Helmut and Daly, Patrick W},
-  title     = {Guide to LATEX},
-  year      = {2003},
-  publisher = {Pearson Education},
-}
-
-@Misc{l2kurz,
-  author = {Daniel, M and Gundlach, P and Schmidt, W and Knappen, J and Partl, H and Hyna, I},
-  title  = {\LaTeXe-{K}urzbeschreibung},
-  year   = {2018},
-  date   = {2018-04-08},
-}
-
-@Misc{doc_mathmode,
-  author = {Voss, H},
-  title  = {Mathematical Typesetting with Latex},
-  year   = {2017},
-  date   = {2017-08-09},
-}
-
 @Electronic{biblatex_biber,
   title   = {biblatex in a nutshell (for beginners)},
   url     = {https://tex.stackexchange.com/questions/13509/biblatex-in-a-nutshell-for-beginners},
@@ -73,41 +13,242 @@
   urldate = {2018-05-18},
 }
 
-@Article{Schmid2018,
-  author    = {Schmid, Hanspeter and Huber, Alex},
-  title     = {Analysis of switched-capacitor circuits using driving-point signal-flow graphs},
-  journal   = {Analog Integrated Circuits and Signal Processing},
-  year      = {2018},
-  date      = {2018-03-01},
-  month     = mar,
-  issn      = {1573-1979},
-  doi       = {10.1007/s10470-018-1131-7},
-  abstract  = {This paper extends the driving-point signal-flow graphs to switched-capacitor (SC) circuits by introducing a new theoretical element: an auxiliary voltage source that transfers no charge. In contrast to existing SFG methods, our method has no restrictions as to what types of SC circuits can be analysed, it requires no equivalent circuits or tables, and it works with two-phase as well as multi-phase SC circuits of any complexity. Compared to charge-equation matrix methods, it requires more effort, but is better suited for hand analysis because it makes causal relationships visible. Three illustrative examples are given to show the efficiency of the method and present a few application hints: a voltage doubler, the standard SC integrator, and a four-phase circuit simulating an inductor.},
-  publisher = {Springer},
+@WWW{geberit,
+  author = {Geberit},
+  title  = {PE Abwasserrohre},
+  date   = {2018-10-21},
+  url    = {https://www.geberit.ch/produkte/rohrleitungssysteme-entwaesserung/geberit-pe-abwasserrohre/},
 }
 
-@Article{Schmid2003,
-  author        = {Schmid, Hanspeter},
-  title         = {Why ‘current mode’ does not guarantee good performance},
-  journal       = {Analog Integrated Circuits and Signal Processing},
-  year          = {2003},
-  volume        = {35},
-  number        = {1},
-  pages         = {79--90},
-  __markedentry = {[hanspi:]},
-  publisher     = {Springer},
+@Online{wisse,
+  author = {{Konradin Medien GmbH}},
+  date   = {2018-10-24},
+  url    = {https://www.wissen.de},
+  note   = {Wasserrad},
 }
 
-@Article{Tellegen1954,
-  author        = {Tellegen, BDH},
-  title         = {La recherche pour una s{\'e}rie compl{\`e}te d’{\'e}l{\'e}ments de circuit ideaux non-lin{\'e}aires},
-  journal       = {Rendiconti del seminario matematico e fisico di Milano},
-  year          = {1954},
-  volume        = {25},
-  number        = {1},
-  pages         = {134--144},
-  __markedentry = {[hanspi:6]},
-  publisher     = {Springer},
+@Online{wiki_hochhaus,
+  author = {Wikipedia},
+  title  = {Hochhaus},
+  date   = {2018-10-24},
+  url    = {https://de.wikipedia.org/wiki/Hochhaus},
+  note   = {Bilder Über -Unterdruckturbine},
+}
+
+@Online{echo,
+  author = {echo},
+  date   = {2018-10-25},
+  url    = {www.echo.ie},
+}
+
+@Online{haustechnikdialog,
+  author = {{BitSign GmbH}},
+  date   = {2018-10-25},
+  url    = {https://www.haustechnikdialog.de/25.10.2018s},
+}
+
+@Online{baunetzwissen,
+  author = {Baunetz Wissen_},
+  title  = {Abwasserleitungen: Verlegung},
+  date   = {2018-10-15},
+  url    = {https://www.baunetzwissen.de/gebaeudetechnik/fachwissen/entwaesserung/abwasserleitungen-verlegung-2459057},
+}
+
+@Online{docplayer,
+  author = {{Carl Dieter}},
+  title  = {Schmutzwasser Fallleitungen in Hochhaeusern},
+  date   = {2018-10-25},
+  url    = {https://docplayer.org/71335169-Schmutzwasser-fallleitungen-in-hochhaeusern.html},
+}
+
+@Online{fh-muenste,
+  author = {{Peter Reichert / Geberit}},
+  title  = {Entwaesserung von Hochhaeusern},
+  date   = {2018-10-25},
+  url    = {https://www.fh-muenster.de/fb4/downloads/seminar_symposium_workshop/2011/sani_symposium/04_Reichert_Entwaesserung_von_Hochhaeusern.pdf},
+}
+
+@Online{wohnbau,
+  author = {{ANDERSCHITZKY, SELLITSCH, STREBL}},
+  title  = {Die Struktur und Funktionalität von Hochhäusern},
+  date   = {2018-10-25},
+  url    = {http://www.wohnbau.tuwien.ac.at/downloads/Archiv/Wohnen%20auf%20hohem%20Niveau/Grundlagenforschung%20WS%202015/Struktur_Funktionalit%C3%A4t_Finish.pdf},
+}
+
+@Online{shk-journal,
+  author = {Wavin},
+  title  = {Das Wavin Abwasserhandbuch},
+  date   = {2018-10-25},
+  url    = {https://www.shk-journal.de/uploads/media/08.08.12_Wavin_Abwasserhandbuch_2008.pdf},
+}
+
+@Online{Hebeanlagen,
+  author = {{Christian Giersch}},
+  title  = {Das Ratgeberportal rund um das Thema Hebeanlagen},
+  year   = {2018},
+  url    = {https://hebeanlagen.info/mit-haecksler},
+  month  = oct,
+}
+
+@Online{BauNetzMedia,
+  author = {Stephan Westermann},
+  title  = {BauNetz Media},
+  year   = {2018},
+  url    = {https://www.baunetzwissen.de/gebaeudetechnik/fachwissen/entwaesserung/abwasserleitungen-verlegung-2459057},
+}
+
+@Online{TippzumBau,
+  author = {Claudia Bayerl},
+  title  = {Tipp zum Bau},
+  year   = {2018},
+  url    = {https://tipp-zum-bau.de/sanitaer/hebeanlage/},
+  month  = oct,
+}
+
+@Online{ksb,
+  title = {Kreiselpumpenlexikon},
+  year  = {2018},
+  url   = {https://www.ksb.com/kreiselpumpenlexikon/bypass/186706/},
+  month = oct,
+}
+
+@Online{Mediagon,
+  title = {Mediagon – Wasseraufbereitung},
+  year  = {2018},
+  url   = {http://www.mediagon.ch/ch-de?ismobile=0&window_width=1433},
+  month = oct,
+}
+
+@Online{Water_Wastewater,
+  title    = {Water \& Wastewater International},
+  year     = {2018},
+  url      = {https://www.waterworld.com/articles/wwi/print/volume-21/issue-2/regional-focus/hydro-technology-extracts-energy-from-sewage-water.html},
+  language = {English},
+  month    = oct,
+}
+
+@Online{Homa-Pumpen,
+  title = {Homa-Pumpen mit System},
+  year  = {2018},
+  url   = {https://www.homa-pumpen.de/},
+  month = oct,
+}
+
+@Article{NYSERDA,
+  author  = {David A. Torrey},
+  title   = {Hydropower from Wastewater},
+  journal = {NYSERDA Report},
+  year    = {2011},
+  date    = {2011-12-01},
+  url     = {https://www.nyserda.ny.gov/-/media/Files/Publications/Research/Environmental/Hydropower-from-Wastewater.pdf},
+  file    = {:Hydropower-from-Wastewater.pdf:PDF},
+}
+
+@Online{nytimes,
+  author = {Alex Frew McMillan},
+  title  = {Making a Building’s Water System Into a Hydroelectric Plant},
+  year   = {2011},
+  date   = {2011-12-13},
+  url    = {https://www.nytimes.com/2013/12/13/realestate/commercial/turning-a-buildings-water-system-into-a-hydroelectric-plant.html},
+}
+
+@Online{waterworld,
+  author = {Unknown},
+  title  = {Hydro technology extracts energy from sewage water},
+  year   = {2006},
+  date   = {2006-04-01},
+  url    = {https://www.waterworld.com/articles/wwi/print/volume-21/issue-2/regional-focus/hydro-technology-extracts-energy-from-sewage-water.html},
+}
+
+@Online{powermag,
+  author = {Sonal Patel},
+  title  = {Australia Gets Hydropower from Wastewater},
+  year   = {2010},
+  date   = {2010-01-07},
+  url    = {https://www.powermag.com/australia-gets-hydropower-from-wastewater/},
+}
+
+@Online{popsci,
+  author = {Unknown},
+  title  = {Harnessing Hydropower From Urban Water Pipes},
+  year   = {2015},
+  date   = {2015-05-19},
+  url    = {https://www.popsci.com/gregg-semler-turns-tiny-turbines-mighty-generators},
+}
+
+@Article{LUCIDPIPE,
+  author       = {Team PurdueECT},
+  title        = {LUCIDPIPE POWER SYSTEM},
+  journal      = {ECT Fact Sheets},
+  journaltitle = {Paper 224},
+  year         = {2016},
+  date         = {2016-08-12},
+  pages        = {4},
+  url          = {https://docs.lib.purdue.edu/ectfs/224/},
+  file         = {:LUCIDPIPE_ POWER SYSTEM.pdf:PDF},
+}
+
+@Online{newatlas,
+  author = {Darren Quick},
+  title  = {HighDro Power converts falling wastewater into electricity},
+  year   = {2010},
+  date   = {2010-07-23},
+  url    = {https://newatlas.com/highdro-power/15805/},
+}
+
+@Online{rentricity,
+  author = {Rentricity},
+  title  = {Creating a Smart Water Grid},
+  year   = {2018},
+  date   = {2018-10-28},
+  url    = {https://rentricity.com/offerings/equipment/},
+}
+
+@Online{solar-wr-wiki,
+  author = {Wikipedia},
+  title  = {Solarwechselrichter},
+  year   = {2018},
+  date   = {2018-10-27},
+  url    = {https://de.wikipedia.org/wiki/Solarwechselrichter},
+}
+
+@Online{solarwatt,
+  title = {Stromspeicher SOLARWATT},
+  year  = {2018},
+  date  = {2018-10-27},
+  url   = {https://www.solarwatt.de/stromspeicher},
+}
+
+@Online{wiki_gleichdruckturbine,
+  author = {Wikipedia},
+  title  = {Gleichdruckturbine},
+  date   = {2018-10-24},
+  url    = {https://de.wikipedia.org/wiki/Gleichdruckturbine},
+  note   = {Bilder Über -Unterdruckturbine},
+}
+
+@Online{wiki_ueberdruck,
+  author = {Wikipedia},
+  title  = {Ueberdruckturbine},
+  date   = {2018-10-24},
+  url    = {https://de.wikipedia.org/wiki/Überdruckturbine},
+  note   = {Bilder Über -Unterdruckturbine},
+}
+
+@Online{Izeg,
+  author = {Izeg},
+  date   = {2018-10-30},
+  url    = {http://www.izeg.de/fileadmin/izeg/technsiche_Informationen/2-2_Tech-Info_Schmutzwasser_Hochhaeuser.pdf},
+}
+@article{uchiyama2016feasibility,
+  title={A Feasibility Study of Power Generation from Sewage Using a Hollowed Pico-Hydraulic Turbine},
+  author={Uchiyama, Tomomi and Honda, Satoshi and Okayama, Tomoko and Degawa, Tomohiro},
+  journal={Engineering},
+  volume={2},
+  number={4},
+  pages={510--517},
+  year={2016},
+  publisher={Elsevier}
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}

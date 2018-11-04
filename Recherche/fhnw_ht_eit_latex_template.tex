@@ -1,10 +1,11 @@
 \let\counterwithout\relax
 \let\counterwithin\relax
 \documentclass[final]{fhnwreport}       %[mode] = draft or final
+\usepackage{color, colortbl}
                                         %{class} = fhnwreport, article, 
                                         %          report, book, beamer, standalone
 \input{header}			                %loads all packages, definitions and settings												
-\title{Pro1}          %Project Title
+\title{Kleinwasserkraftwerk}          %Project Title
 \author{Recherche}          %Document Type => Technical Report, ...
 \date{Windisch, 05.10.2018}             %Place and Date
 
@@ -18,25 +19,26 @@
 \vfill
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{titelbild.pdf}
+\includegraphics[width=\linewidth]{titelBild.jpg}
 \end{figure}
 \vfill
 
 {
 \renewcommand\arraystretch{2}
 \begin{center}
-\begin{tabular}{>{\bf}p{4cm} l}
-Hochschule                 &    Hochschule für Technik - FHNW\\
-Studiengang                &    Elektro- und Informationstechnik\\
-Autor   		           & 	Gruppe 4\\
-Betreuer                   &    Pascal Buchschacher\\
-Auftraggeber               &    Felix Jenni\\
-Version                    &    1.0 %Normally not used!
+\begin{tabular}{ >{\bf} l p{10cm} l }
+Hochschule                 &   Hochschule für Technik - FHNW\\
+Studiengang               &  	Elektro- und Informationstechnik\\
+Autoren   		       & 	Bachmann Lars \newline  Fischer Roni \newline Imhof Frank \newline Puschmann Pascal\\ 
+Betreuer                   	&    Pascal Buchschacher\\
+Auftraggeber             	&    Felix Jenni\\
+Version                    	&    1.0 %Normally not used!
 \end{tabular}
 \end{center}
 }
 
 \clearpage
+
 \selectlanguage{ngerman}				%ngerman or english
 \thispagestyle{empty}
 			
@@ -51,9 +53,15 @@ Version                    &    1.0 %Normally not used!
 \include{sections/einleitung}
 \include{sections/recherche}
 \include{sections/fazit}
-\include{sections/quellen}
-\include{sections/echtheitserklaerung}
 
+%%---BIBLIOGRAPHY------------------------------------------------------------------------
+
+{\sloppypar
+\selectlanguage{english}	
+\setlength{\bibitemsep}{\baselineskip}
+\printbibliography[heading=bibintoc]
+\label{sec:lit}
+}
 
 %%---NOTES for DEBUG---------------------------------------------------------------------
 \ifdraft{%Do this only if mode=draft

@@ -1,0 +1,79 @@
+
+Verweisen:
+\todo{}		Kommentare
+\label{}	Überschrift bennen für Verweis
+\caption{}	Abbildungen/Tabellen beschreiben. Unten Text + naher muss noch label gesetzt werden
+
+Namengebung label:
+\label{sec:name} für Kapitel (sections)
+\label{fig:name} für Bilder (figures)
+\label{tab:name} für Tabellen (tables)
+\label{equ:name} für Formeln (equations)
+\label{app:name} für Objekte im Anhang (appendix)
+
+\eqref{}	Nummer verweisen
+\nameref	Namen verweisen
+
+Figure
+[tbp] gesetzt ist (top, bottom, page, here) platzierung. Latex platziert bilder sonst bei /clearpage
+\begin{figure}[b]
+	\centering
+	\includegraphics[width=0.9\linewidth]{beispiel.pdf}
+	\caption{Dies ist ein Beispiel für eine Abbildung.}
+	\label{fig:Figure}
+\end{figure}
+
+
+Literatur
+ \cite[S.~80]{Schmid2003}	Refernzieren
+{\sloppypar
+\selectlanguage{english}	
+\setlength{\bibitemsep}{\baselineskip}
+\printbibliography[heading=bibintoc]
+\label{sec:lit}
+}
+
+Literatur kompilieren: 
+1. pdfLaTEx
+2. biber
+3. pdfLaTex
+4. pdfLaTex
+
+
+
+Matheformeln:
+\num{}		Zahlen darstellen
+\si{}		Einheiten darstellen
+\cdot		mal zeichen
+\left \right	Klammern
+
+
+Die wichtigsten Befehle für horizontale Abstände sind:
+
+~ 		Leerschlag mit unterdrücktem Zeilenumbruch
+\, 		Kleiner Abstand
+\; 		Mittelgrosser Abstand
+\! 		DenAbstandverkürzen (kann auch mehrmals angewendet werden: zumBeispiel)
+\quad 		Abstand so breit wie ein Buchstabe hoch is
+\phantom{} 	So breit wie der übergebene Text (Das ist ein -Beispiel)
+\hspace{} 	So breit wie man will (Das sind 2 cm Abstand)
+\hfill 		Abstand, bis die Zeile voll ist
+\dotfill 	Punkte, bis die Zeile voll ist
+\hrulefill 	Linie, bis die Zeile voll ist
+
+Die wichtigsten Befehle für vertikale Abstände sind:
+
+\smallskip 	Kleiner Abstand
+\medskip 	Mittlerer Abstand
+\bigskip 	Grosser Abstand
+\parskip 	Definierter Absatzabstand
+\vphantom 	So hoch wie der übergebene Text (hilfreich in Formeln)
+\vspace{} 	So hoch wie man will
+\vfill 		Abstand, bis die Seite voll ist
+
+
+
+
+Sprache ändern:  \selectlanguage{ngerman}    \selectlanguage{english}
+
+option/Textmaker konfigurieren
