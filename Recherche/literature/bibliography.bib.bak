@@ -48,7 +48,7 @@
 }
 
 @Online{baunetzwissen,
-  author = {Baunetz_Wissen_},
+  author = {Baunetz Wissen_},
   title  = {Abwasserleitungen: Verlegung},
   date   = {2018-10-15},
   url    = {https://www.baunetzwissen.de/gebaeudetechnik/fachwissen/entwaesserung/abwasserleitungen-verlegung-2459057},
@@ -90,14 +90,14 @@
   month  = oct,
 }
 
-@Online{baunetzwissen,
+@Online{BauNetzMedia,
   author = {Stephan Westermann},
   title  = {BauNetz Media},
   year   = {2018},
   url    = {https://www.baunetzwissen.de/gebaeudetechnik/fachwissen/entwaesserung/abwasserleitungen-verlegung-2459057},
 }
 
-@Online{tipp-zum-bau,
+@Online{TippzumBau,
   author = {Claudia Bayerl},
   title  = {Tipp zum Bau},
   year   = {2018},
@@ -112,14 +112,14 @@
   month = oct,
 }
 
-@Online{mediagon,
+@Online{Mediagon,
   title = {Mediagon – Wasseraufbereitung},
   year  = {2018},
   url   = {http://www.mediagon.ch/ch-de?ismobile=0&window_width=1433},
   month = oct,
 }
 
-@Online{waterworld,
+@Online{Water_Wastewater,
   title    = {Water \& Wastewater International},
   year     = {2018},
   url      = {https://www.waterworld.com/articles/wwi/print/volume-21/issue-2/regional-focus/hydro-technology-extracts-energy-from-sewage-water.html},
@@ -127,7 +127,7 @@
   month    = oct,
 }
 
-@Online{home-pumpen,
+@Online{Homa-Pumpen,
   title = {Homa-Pumpen mit System},
   year  = {2018},
   url   = {https://www.homa-pumpen.de/},
@@ -239,6 +239,16 @@
   author = {Izeg},
   date   = {2018-10-30},
   url    = {http://www.izeg.de/fileadmin/izeg/technsiche_Informationen/2-2_Tech-Info_Schmutzwasser_Hochhaeuser.pdf},
+}
+@article{uchiyama2016feasibility,
+  title={A Feasibility Study of Power Generation from Sewage Using a Hollowed Pico-Hydraulic Turbine},
+  author={Uchiyama, Tomomi and Honda, Satoshi and Okayama, Tomoko and Degawa, Tomohiro},
+  journal={Engineering},
+  volume={2},
+  number={4},
+  pages={510--517},
+  year={2016},
+  publisher={Elsevier}
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
