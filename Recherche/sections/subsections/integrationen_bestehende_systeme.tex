@@ -7,22 +7,20 @@ Da die aus Abwasser gewonnene Energie keinen gleichmässigen zeitlichen Verlauf 
 \subsubsection{Ergebnisse}
 
 \paragraph{Energiespeicher}
-
-Der in einer Photovoltaikanlage erzeugte Strom wird zunächst für den Eigenverbrauch genutzt. Das heißt, aktive Stromverbraucher, wie beispielsweise Kühltruhen oder andere Haushaltsgeräte, werden mit dem Strom betrieben. Steht jedoch mehr Strom als gebraucht zur Verfügung, fließt der überschüssige Solarstrom in die Batterie des Speichers - und dieser wird geladen. Erst wenn der Solarspeicher voll ist, wird der nicht benötigte Solarstrom ins Stromnetz eingespeist.
+Der in einer Photovoltaikanlage erzeugte Strom wird zunächst für den Eigenverbrauch genutzt. Das heißt, aktive Stromverbraucher, wie beispielsweise Kühltruhen oder andere Haushaltsgeräte, werden mit dem Strom betrieben. Steht jedoch mehr Strom als gebraucht zur Verfügung, flie{\ss}t der überschüssige Solarstrom in die Batterie des Speichers - und dieser wird geladen. Erst wenn der Solarspeicher voll ist, wird der nicht benötigte Solarstrom ins Stromnetz eingespeist.
 
 Wird in den Abend- oder Nachtstunden Strom benötigt, steht der gespeicherte Solarstrom zur Verfügung. Ist der Strombedarf tagsüber höher als die von der Photovoltaikanlage produzierte Menge Solarstrom, steht ebenfalls der gespeicherte Strom zur Verfügung - egal ob der Speicher vollständig oder nur teilweise geladen ist. Erst wenn der gespeicherte Solarstrom ebenfalls nicht ausreicht, wird weiterer Strom vom Energieversorger bezogen.
 
 Ein Großteil der am Markt erhältlichen Stromspeicher lässt sich nicht ohne weiteres in Bestandsanlagen integrieren. Meist sind technische Veränderungen, wie der Austausch des Wechselrichters oder Zusatzarbeiten notwendig. Ein hohes Gewicht und teilweise enorme Abmessungen vieler Energiespeicher schränken die Abstellmöglichkeiten ein und bringen einen großen Installationsaufwand mit sich: In der Regel sind mehrere Installateure mindestens einen Tag beschäftigt. \cite{solarwatt}
 
 \paragraph{Wechselrichter}
-
 In einigen europäischen Ländern wird auf der Netzseite eine so genannte Einrichtung zur Netzüberwachung mit zugeordneten Schaltorganen (ENS) benötigt, die den Wechselrichter bei einer ungewollten Inselbildung abschaltet. Bei Anlagen mit installierten Leistungen über 30 \si{kW} kann auf die ENS verzichtet werden. Dort genügt eine Frequenz- und Spannungsüberwachung mit allpoliger Abschaltung zur sicheren Trennung vom Netz, falls dieses abgeschaltet wird bzw. ausfällt. 
 
 Es wird oft mit einem hohen Wirkungsgrad der Wechselrichter geworben. Im Teillastbereich ist er etwas geringer und wird deshalb gemittelt und dann als „Europäischer Wirkungsgrad“ bezeichnet. Der Wirkungsgrad des Wechselrichters entscheidet jedoch nicht allein über den Gesamtwirkungsgrad einer Photovoltaikanlage. 
 
 \iffalse
 
-Seit Januar 2009 müssen Photovoltaikanlagen in Deutschland mit installierten Leistungen ab 100 \si{kW} über die Möglichkeit verfügen, vom Netzbetreiber in der eingespeisten Wirkleistung reduziert zu werden (§ 6.1 EEG). Des Weiteren besteht die Möglichkeit, dass eine bestimmte Menge Blindleistung zur Verfügung gestellt wird. In der Praxis werden diese Vorgaben dynamisch über Rundsteuerempfänger realisiert, die eine vierstufige Wirkleistungsreduzierung signalisieren können bzw. einen von 1 abweichenden Wirkfaktor von beispielsweise $\cos \phi = 0,95$ (induktiv) vorgeben. Durch die Bereitstellung von induktiver Blindleistung können kapazitiv bedingte Überspannungen vermieden werden. 
+Seit Januar 2009 müssen Photovoltaikanlagen in Deutschland mit installierten Leistungen ab 100 \si{kW} über die Möglichkeit verfügen, vom Netzbetreiber in der eingespeisten Wirkleistung reduziert zu werden (\S 6.1 EEG). Des Weiteren besteht die Möglichkeit, dass eine bestimmte Menge Blindleistung zur Verfügung gestellt wird. In der Praxis werden diese Vorgaben dynamisch über Rundsteuerempfänger realisiert, die eine vierstufige Wirkleistungsreduzierung signalisieren können bzw. einen von 1 abweichenden Wirkfaktor von beispielsweise $\cos \phi = 0,95$ (induktiv) vorgeben. Durch die Bereitstellung von induktiver Blindleistung können kapazitiv bedingte Überspannungen vermieden werden. 
 
 Ab Juli 2011 müssen auch kleinere Anlagen im Niederspannungsnetz vergleichbare Regelfunktionen anbieten. Landestypische weitergehende Vorschriften führen zu Lieferengpässen und höheren Erzeugungskosten. Gegenkonzepte wie Net Metering verfolgen einen unkomplizierteren Ansatz und verlagern die Problematik auf den Netzbetreiber. 
 
@@ -33,10 +31,9 @@ Bei größeren Anlagen, bei welchen unter anderem die Mittelspannungsrichtlinie 
 Einphasige Anlagen dürfen in Deutschland nur bis zu einer maximalen Leistung von 5 \si{kW} (4,6 \si{kW} Dauerleistung) in das Stromnetz einspeisen. Diese Beschränkung dient der Netzstabilität und vermeidet Schieflasten. Neben der grundlegenden Funktion der Energiewandlung verfügt ein Solarwechselrichter über eine umfangreiche Datenerfassung und zum Teil Möglichkeiten zur Fernwartung. \cite{solar-wr-wiki}
 
 \subsubsection{Fazit}
-
 Stromspeicher sind teuer – nicht nur wegen der Batteriezellen, sondern auch wegen zugehöriger Hardware. Es ist fraglich, ob es diese Investition angesichts der überschaubaren Energiemenge wert ist. 
 
-Die Einspeisung des Stromes in das Stromnetz scheint hingegen schon eher möglich zu sein, da dies in der Schweiz ohne Bewilligung erlaubt ist, solange die eingespiesene Leistung gering ist. Dazu muss der Strom zunächst gleichgerichtet und anschliessend von einem Wechselrichter auf 230\si{V} @ 50 \si{Hz} transformiert werden. Solche Geräte sind erhältlich, bewegen sich preislich aber zwischen mehreren hundert bis mehreren tausend Franken.
+Die Einspeisung des Stromes in das Stromnetz scheint hingegen schon eher möglich zu sein, da dies in der Schweiz ohne Bewilligung erlaubt ist, solange die eingespiesene Leistung gering ist. Dazu muss der Strom zunächst gleichgerichtet und anschliessend von einem Wechselrichter auf 230 \si{V} @ 50 \si{Hz} transformiert werden. Solche Geräte sind erhältlich, bewegen sich preislich aber zwischen mehreren hundert bis mehreren tausend Franken.
 
 Die Integration in bestehende Solaranlagen ist vermutlich die einfachste Option, da in diesem Fall Energiespeicher und/oder Wechselrichter meist schon vorhanden sind.
 
