@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.12)  21 NOV 2018 16:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.12)  22 NOV 2018 11:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2020,78 +2020,19 @@ Package pdftex.def Info: ./graphics/Organi.png  used on input line 17.
 
 
 (./sections/5_Risikoanalyse/Risikoanalyse.tex
-
-! Package xkeyval Error: `witdth' undefined in families `Gin'.
-
-See the xkeyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4 ...s[angle=90,witdth=0.4cm]{Risikoanalyse.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<./graphics/Risikoanalyse.png, id=133, 1119.18124pt x 592.2125pt>
+<./graphics/Risikoanalyse.png, id=133, 331.2375pt x 607.26875pt>
 File: ./graphics/Risikoanalyse.png Graphic file (type png)
 <use ./graphics/Risikoanalyse.png>
 Package pdftex.def Info: ./graphics/Risikoanalyse.png  used on input line 4.
-(pdftex.def)             Requested size: 1119.17851pt x 592.21104pt.
-
-Overfull \hbox (136.96696pt too wide) in paragraph at lines 4--6
- [][] |
- []
-
-[5
+(pdftex.def)             Requested size: 331.23668pt x 607.26727pt.
+ [5
 
 
 ]
-Overfull \vbox (477.3732pt too high) has occurred while \output is active []
+Overfull \vbox (22.7481pt too high) has occurred while \output is active []
 
 
 [6 <./graphics/Risikoanalyse.png>]
-
-! Package inputenc Error: Unicode character ̈ (U+308)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 ...ne Risikotabelle. In dieser werden die mö
-                                                  glichen Gefahren aufgelist...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! Package inputenc Error: Unicode character ̈ (U+308)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 ...chen Gefahren aufgelistet und bereits Prä
-                                                  ventionsmassnahmen genannt...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! Package inputenc Error: Unicode character ̈ (U+308)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 ...rden zudem alle Gefahren mit und ohne Prä
-                                                  vention graphisch dargeste...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
 <./graphics/Risikotab.pdf, id=145, 845.1575pt x 597.23125pt>
 File: ./graphics/Risikotab.pdf Graphic file (type pdf)
 <use ./graphics/Risikotab.pdf>
@@ -2135,10 +2076,10 @@ Package logreq Info: Writing requests to 'Pflichtenheft.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 78.
  ) 
 Here is how much of TeX's memory you used:
- 48017 strings out of 492649
- 1008151 string characters out of 6129622
+ 48016 strings out of 492649
+ 1008146 string characters out of 6129622
  1559576 words of memory out of 5000000
- 51116 multiletter control sequences out of 15000+600000
+ 51115 multiletter control sequences out of 15000+600000
  584208 words of font info for 54 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  64i,10n,72p,10528b,2279s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2149,7 +2090,7 @@ st/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
 pe1/public/lm/lmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/
 lm/lmro10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmssbx1
 0.pfb>
-Output written on Pflichtenheft.pdf (10 pages, 2001713 bytes).
+Output written on Pflichtenheft.pdf (10 pages, 1800111 bytes).
 PDF statistics:
  215 PDF objects out of 1000 (max. 8388607)
  169 compressed objects within 2 object streams
