@@ -23,3 +23,9 @@ git pull
 
 Ein Verzeichnis ungitten
 rm -Rf .git*
+
+In welchem Branch bin ich grad?
+git branch
+
+Was sind die letzten commits?
+git log
