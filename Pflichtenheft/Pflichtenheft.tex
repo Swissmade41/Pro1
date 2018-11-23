@@ -2,7 +2,8 @@
 \let\counterwithin\relax
 \documentclass[final]{fhnwreport}       %[mode] = draft or final
 \usepackage{color, colortbl}
-\usepackage{rotating, rotfloat}
+\usepackage{rotating, rotfloat,ragged2e, hyphenat}
+
                                         %{class} = fhnwreport, article, 
                                         %          report, book, beamer, standalone
 \input{header}			                %loads all packages, definitions and settings												
@@ -40,23 +41,23 @@ Version&1.0 %Normally not used!
 
 \clearpage
 
-\selectlanguage{ngerman}				%ngerman or english
+%\selectlanguage{ngerman}				%ngerman or english
 \thispagestyle{empty}
 			
 %%---TABLE OF CONTENTS-------------------------------------------------------------------
 \pagenumbering{Roman}		
-\selectlanguage{ngerman}				%ngerman or english
+%\selectlanguage{ngerman}				%ngerman or english
 \tableofcontents
 \clearpage
 
 %%---TEXT--------------------------------------------------------------------------------
 \pagenumbering{arabic}
-\include{sections/1_Einleitung/Einleitung}
-\include{sections/2_Projektorganisation/Projektorganisation}
-\include{sections/3_Planung/Planung}
-\include{sections/4_Budget/Projektbudget}
+%\include{sections/1_Einleitung/Einleitung}
+%\include{sections/2_Projektorganisation/Projektorganisation}
+%\include{sections/3_Planung/Planung}
+%\include{sections/4_Budget/Projektbudget}
 \include{sections/5_Risikoanalyse/Risikoanalyse}
-\include{sections/6_Projektvereinbahrung/Projektvereinbarung}
+%\include{sections/6_Projektvereinbahrung/Projektvereinbarung}
 
 %%---BIBLIOGRAPHY------------------------------------------------------------------------
 
