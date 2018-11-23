@@ -20,3 +20,6 @@ git push
 
 Veraenderungen runterladen (falls lokale Repo nicht aktuell gegenueber Remote)
 git pull
+
+Ein Verzeichnis ungitten
+rm -Rf .git*
