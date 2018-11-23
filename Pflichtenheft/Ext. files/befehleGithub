@@ -5,7 +5,7 @@ git clone -b Pflichtenheft <LINK>
 
 Status der lokalen Repository ueberpruefen
 (zuerst ins Verzeichnis manoevrieren, dann)
-git status
+git status -uno
 
 Lokale Veraenderungen fuers Commiten bereitstellen/hinzufuegen
 git add <FILE> (fuegt ein bestimmes File hinzu)
