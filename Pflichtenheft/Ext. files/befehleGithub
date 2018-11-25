@@ -1,0 +1,31 @@
+Befehle fuer Git Benutzung via Terminal
+
+Einen Branch der Repository lokal speichern = clonen
+git clone -b Pflichtenheft <LINK>
+
+Status der lokalen Repository ueberpruefen
+(zuerst ins Verzeichnis manoevrieren, dann)
+git status -uno
+
+Lokale Veraenderungen fuers Commiten bereitstellen/hinzufuegen
+git add <FILE> (fuegt ein bestimmes File hinzu)
+git add . (fuegt alle neu gemachten und veraenderten hinzu)
+git add -u (fuegt nur die Aenderungen hinzu, aber keine neuen Files)
+
+Die Veraenderungen commiten
+git commit -m "MESSGE"
+
+Die Veraenderungen hochladen
+git push
+
+Veraenderungen runterladen (falls lokale Repo nicht aktuell gegenueber Remote)
+git pull
+
+Ein Verzeichnis ungitten
+rm -Rf .git*
+
+In welchem Branch bin ich grad?
+git branch
+
+Was sind die letzten commits?
+git log
