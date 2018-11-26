@@ -1,7 +1,7 @@
 % Encoding: UTF-8
 
 @Article{waterUsAmerica,
-  author  = {Cheryl A. Dieter and MollyAa. Maupin},
+  author  = {{Cheryl A. Dieter and MollyAa. Maupin}},
   title   = {Puplic Supply and Domestic Water Use in the United States, 2015},
   journal = {Science for a changing world},
   year    = {2017},
@@ -10,7 +10,7 @@
 }
 
 @Article{recherchedokument,
-  author = {Projektgruppe 4, 1. Semester, FHNW 2018},
+  author = {{Projektgruppe 4, 1. Semester, FHNW 2018}},
   title  = {V1.0 Recherchedokument Gruppe 4},
   year   = {2018},
   file   = {:V1.0 Recherchedokument Gruppe 4.pdf:PDF},
