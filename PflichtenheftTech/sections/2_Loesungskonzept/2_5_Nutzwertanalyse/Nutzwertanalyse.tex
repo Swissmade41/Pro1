@@ -1,1 +1,44 @@
 \subsection{Nutzwertanalyse} \label{subsec:nutzwertanlyse}
+\newcolumntype{K}[1]{>{\HY\RaggedRight}p{#1}}
+\newcommand{\vtcl}[1]{\rotatebox{90}{\textbf{#1}}}
+\begin{table}[H]
+\scriptsize
+\rotatebox{90}{
+%\RaggedRight bewirkt, dass der Text nicht mehr im Blocksatz sondern Linksorientiert ist.
+%\raggedRight funktioniert im Gegensatz zu RaggedRight nicht im Zusammenspiel mit HY
+\begin{tabular}{K{3cm}K{1.2cm}K{1cm}|K{1.2cm}K{0.8cm}K{0.8cm}|K{1.2cm}K{0.8cm}K{0.8cm}|K{1.2cm}K{0.8cm}K{0.8cm}|K{1.2cm}K{0.8cm}K{0.8cm}}
+&&Max&\multicolumn{3}{c}{Grobkonzept 1}&\multicolumn{3}{c}{Grobkonzept 2}&\multicolumn{3}{c}{Grobkonzept 3}&\multicolumn{3}{c}{Grobkonzept 4}\\
+\textbf{Zielkriterium}&\vtcl{Gewichtung}&\vtcl{Nutzwert}&\vtcl{Wert}&\vtcl{Erfüllungsgrad}&\vtcl{Nutzwert}&\vtcl{Wert}&\vtcl{Erfüllungsgrad}&\vtcl{Nutzwert}&\vtcl{Wert}&\vtcl{Erfüllungsgrad}&\vtcl{Nutzwert}&\vtcl{Wert}&\vtcl{Erfüllungsgrad}&\vtcl{Nutzwert}\\
+\hline
+\rowcolor{grau}
+\multicolumn{15}{l}{\textbf{Elektrotechnik}}\\
+Wirkungsgrad&15\%&&&&&&&&&&&&&\\
+Mindestleistung&33\%&&&&&&&&&&&&&\\
+Rückspeisung&10\%&&&&&&&&&&&&&\\
+Wechselrichter&11\%&&&&&&&&&&&&&\\
+Steuerung&11\%&&&&&&&&&&&&&\\
+\rowcolor{grau}
+\multicolumn{15}{l}{\textbf{Abwassertechnik}}\\
+Steuerung&15\%&&&&&&&&&&&&&\\
+Sicherheit&33\%&&&&&&&&&&&&&\\
+Korrosionsschutz&10\%&&&&&&&&&&&&&\\
+Druck in den Leitungen&11\%&&&&&&&&&&&&&\\
+Platzbedarf&11\%&&&&&&&&&&&&&\\
+\rowcolor{grau}
+\multicolumn{15}{l}{\textbf{Kosten}}\\
+Materialkosten&11\%&&&&&&&&&&&&&\\
+Wartungskosten&11\%&&&&&&&&&&&&&\\
+Amortisationszeit&11\%&&&&&&&&&&&&&\\
+\rowcolor{grau}
+\multicolumn{15}{l}{\textbf{Sonstige}}\\
+Lärmbelastung&11\%&&&&&&&&&&&&&\\
+Integrationsaufwand&11\%&&&&&&&&&&&&&\\
+\hline
+Summe&100.0\%&&&&&&&&&&&&&\\
+Summe&100.0\%&&&&&&&&&&&&&\\
+\hline
+\multicolumn{3}{l|}{\textbf{Rangfolge}}&\multicolumn{3}{r|}{\textbf{1}}&\multicolumn{3}{r|}{\textbf{2}}&\multicolumn{3}{r|}{\textbf{3}}&\multicolumn{3}{r|}{\textbf{4}}\\
+\hline
+\end{tabular}
+}
+\end{table}
