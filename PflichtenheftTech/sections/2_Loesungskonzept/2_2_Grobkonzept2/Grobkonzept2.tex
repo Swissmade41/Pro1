@@ -1,24 +1,31 @@
 \subsection{Grobkonzept 2} \label{subsec:grobkonzept2}
-
-\begin{table}[H]
-\begin{tabular}{>{\columncolor{hgelb}}l>{\columncolor{dgelb}}l>{\columncolor{hgelb}}llllll>{\columncolor{hgruen}}l>{\columncolor{dgruen}}l>{\columncolor{hgruen}}ll}
-%GELBE KOLONNE						BLAUE UND PINKIGE KOLONNE										GRUENE KOLONNE
-\titleCell{hgelb}{\textbf{Turbine}}	&&\titleCell{hblau}{\textbf{Elektrotechnik}}					&&\titleCell{hgruen}{\textbf{Abwassertechnik}}&\\
-&\textbf{Turbinentyp}				&&&\cC{hblau}	&\cC{dblau}\textbf{Wechselrichter}	&\cC{hblau}	&&&\textbf{Tanks}				&&\\
-&Pelton								&&&\cC{hblau}	&\cC{dblau}\textbf{Ventilsteuerung}	&\cC{hblau}	&&&Ablassentile					&&\\
-&\textbf{Generatortyp}				&&&\cC{hblau}	&\cC{dblau}							&\cC{hblau}	&&&Entlüftung					&&\\
-&Gleichstrom						&&&\titleCell{hblau}{ }											&&&Trichterförmig				&&\\
-&\textbf{Anzahl}					&&&&&															&&&Füllstandssensor				&&\\
-%ACHTUNG WEISSER ZWISCHENRAUM
-&1									&&&\titleCell{hpink}{\textbf{Bedienung}}						&&&Notüberlauf					&&\\
-&									&&&\cC{hpink}	&\cC{dpink}\textbf{Anzeige}			&\cC{hpink}	&&&\textbf{Druckleitungen}		&&\\
-&									&&&\cC{hpink}	&\cC{dpink}der Füllstände			&\cC{hpink}	&&&Druckfestigkeit >40 bar		&&\\
-&									&&&\cC{hpink}	&\cC{dpink}der Aktuellen Leistung	&\cC{hpink}	&&&\textbf{Bypass}				&&\\
-&									&&&\cC{hpink}	&\cC{dpink}\textbf{Ventilsteuerung}	&\cC{hpink}	&&&für Tanks					&&\\
-&									&&&\cC{hpink}	&\cC{dpink}							&\cC{hpink}	&&&für Turbine					&&\\
-\titleCell{hgelb}{ }				&&\titleCell{hpink}{ }											&&\titleCell{hgruen}{ }&
+\newcommand{\HY}{\hyphenpenalty = 25\exhyphenpenalty = 25}
+\begin{tabular}[H]{>{\HY\RaggedRight}p{3cm} >{\HY\RaggedRight}p{2.5cm} >{\HY\RaggedRight}p{4cm} >{\HY\RaggedRight}p{2cm} >{\HY\RaggedRight}p{1.5cm}}
+\hline
+\textbf{Bestandteil}&\textbf{Modell}&\textbf{Funktion}&\textbf{Specs}&\textbf{Stckz.}\\
+\hline
+\rowcolor{dgelb}
+\multicolumn{5}{l}{\textbf{Stromerzeugung}}\\
+Turbine&Pelton&&??&1\\
+Generator&??&Gleichstromwandlung?&??&1\\
+\rowcolor{dblau}
+\multicolumn{5}{l}{\textbf{Elektrotechnik}}\\
+Wechselrichter&&&&\\
+Ventilsteuerung&&&&\\
+\rowcolor{dpink}
+\multicolumn{5}{l}{\textbf{Kommunikation}}\\
+Anzeige&&zeigt Tankfüllstand an&&\\
+Anzeige&&zeigt Turbinenleistung an&&\\
+\rowcolor{dgruen}
+\multicolumn{5}{l}{\textbf{Abwassertechnik}}\\
+Tank&??&Sammelt das Abwasser von den oberen Stockwerken&1000m3, trichterförmig&5\\
+Ablassventil&?&Entlässt das Abwasser aus dem Tank&&\\
+Entlüftung&??&&&\\
+Notüberlauf&&&&\\
+Füllstandsensor&&Misst den Füllstand des Tanks&&\\
+Druckleitungen&&Machen hohe Wassersäulen möglich?&>40 bar&\\
+\hline
 \end{tabular}
-\end{table}
 
 
 Im Grobkonzept 2 soll die Energieausbeutung gesteigert werden, indem das Abwasser zuerst in Tanks gespeichert wird, die all ca. 13 Stockwerke eingebaut sind. Wenn ein Tank voll ist, wird ein Ventil geöffnet und das Wasser fliesst durch eine Druckleitung in den Keller, wo es eine Pelton-Turbine antreibt. Da das Abwasser das Rohr komplett ausfüllt, gibt es keinen Luftwiderstand, der es abbremst. So kann der Wirkungsgrad des Systems verbessert werden. Ausserdem braucht man nur eine Turbine, die von mehreren Tanks gespeist werden kann. Um zu verhindern, dass es in den Tanks zu Ablagerungen kommt, ist der Boden der Tanks trichterförmig. So werden alle Ablageungen beim Öffnen des Ventils weggespült. 
