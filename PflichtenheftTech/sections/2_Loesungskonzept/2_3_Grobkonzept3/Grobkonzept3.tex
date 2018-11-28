@@ -1,23 +1,32 @@
 \subsection{Grobkonzept 3} \label{subsec:grobkonzept3}
-\begin{table}[H]
-\begin{tabular}{>{\columncolor{hgelb}}l>{\columncolor{dgelb}}l>{\columncolor{hgelb}}llllll>{\columncolor{hgruen}}l>{\columncolor{dgruen}}l>{\columncolor{hgruen}}ll}
-%GELBE KOLONNE						BLAUE UND PINKIGE KOLONNE										GRUENE KOLONNE
-\titleCell{hgelb}{\textbf{Turbine}}	&&\titleCell{hblau}{\textbf{Elektrotechnik}}					&&\titleCell{hgruen}{\textbf{Abwassertechnik}}&\\
-&\textbf{Turbinentyp}				&&&\cC{hblau}	&\cC{dblau}\textbf{Wechselrichter}	&\cC{hblau}	&&&\textbf{Tanks}				&&\\
-&Pelton								&&&\cC{hblau}	&\cC{dblau}\textbf{Ventilsteuerung}	&\cC{hblau}	&&&Ablassentile					&&\\
-&\textbf{Generatortyp}				&&&\cC{hblau}	&\cC{dblau}							&\cC{hblau}	&&&Entlüftung					&&\\
-&Gleichstrom						&&&\titleCell{hblau}{ }											&&&Trichterförmig				&&\\
-&\textbf{Anzahl}					&&&&&															&&&Füllstandssensor				&&\\
-%ACHTUNG WEISSER ZWISCHENRAUM
-&alle ca. 13 Stockwerke				&&&\titleCell{hpink}{\textbf{Bedienung}}						&&&Notüberlauf					&&\\
-&									&&&\cC{hpink}	&\cC{dpink}\textbf{Anzeige}			&\cC{hpink}	&&&\textbf{Druckleitungen}		&&\\
-&									&&&\cC{hpink}	&\cC{dpink}der Füllstände			&\cC{hpink}	&&&Druckfestigkeit >40 bar		&&\\
-&									&&&\cC{hpink}	&\cC{dpink}der Aktuellen Leistung	&\cC{hpink}	&&&\textbf{Bypass}				&&\\
-&									&&&\cC{hpink}	&\cC{dpink}\textbf{Ventilsteuerung}	&\cC{hpink}	&&&für Tanks					&&\\
-&									&&&\cC{hpink}	&\cC{dpink}							&\cC{hpink}	&&&für Turbine					&&\\
-\titleCell{hgelb}{ }				&&\titleCell{hpink}{ }											&&\titleCell{hgruen}{ }&
+\begin{tabular}[H]{>{\HY\RaggedRight}p{3cm} >{\HY\RaggedRight}p{2cm} >{\HY\RaggedRight}p{4cm} >{\HY\RaggedRight}p{3.5cm} >{\HY\RaggedRight}p{1.2cm}}
+\hline
+\textbf{Bestandteil}&\textbf{Modell}&\textbf{Funktion}&\textbf{Specs}&\textbf{Stckz.}\\
+\hline
+\rowcolor{dgelb}
+\multicolumn{5}{l}{\textbf{Stromerzeugung}}\\
+Turbine&Pelton&&??&5\\
+Generator&??&Gleichstromwandlung?&??&5\\
+\rowcolor{dblau}
+\multicolumn{5}{l}{\textbf{Elektrotechnik}}\\
+Wechselrichter&&&&\\
+Ventilsteuerung&&&&\\
+\rowcolor{dpink}
+\multicolumn{5}{l}{\textbf{Kommunikation}}\\
+Anzeige&&zeigt Tankfüllstand an&&\\
+Anzeige&&zeigt Turbinenleistung an&&\\
+\rowcolor{dgruen}
+\multicolumn{5}{l}{\textbf{Abwassertechnik}}\\
+Tank&??&Sammelt das Abwasser von den oberen Stockwerken&1000m3, trichterförmig&5\\
+Ablassventil&?&Entlässt das Abwasser aus dem Tank&&\\
+Entlüftung&??&&&\\
+Notüberlauf&&&&\\
+Füllstandsensor&&Misst den Füllstand des Tanks&&\\
+Druckleitungen&&Machen hohe Wassersäulen möglich?&Druckfestigkeit >40 bar&\\
+Bypass&&Umleitung zur Entlastung vom Tank&&\\
+Bypass&&Umleitung zur Entlastung der Turbine&&\\
+\hline
 \end{tabular}
-\end{table}
 
 Dieses Grobkonzept ist fast identisch zu Grobkonzept 2. Es gibt wieder einen oder mehrere Tanks, in denen das Abwasser zwischengespeichert wird. Allerdings gibt es nicht nur eine, sondern bei jedem Tank eine Turbine. Das Abwasser fliesst  immer von einem Tank durch die Turbine in den darunterliegenden. Bei Grobkonzept 1 kann es relativ lange dauern, bis die Rohre komplett mit Wasser gefüllt sind. Bis das der Fall ist, kommt es zu einem Luftwiderstand in der Leitung. Bei jedem Tank eine Turbine einzubauen hat den Vorteil, dass die Rohre kürzer sind und so nach öffnen des Ventils schneller komplett mit Wasser gefüllt werden. So wird die Zeit verkürzt, in der Luftwiderstand auftritt. 
 

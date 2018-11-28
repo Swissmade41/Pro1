@@ -11,26 +11,28 @@
 \newcommand{\titleCell}[2]{\multicolumn{3}{c}{\cellcolor{#1}#2}}
 \newcommand{\cC}[1]{\cellcolor{#1}}
 
-\begin{table}[H]
-\begin{tabular}{>{\columncolor{hgelb}}l>{\columncolor{dgelb}}l>{\columncolor{hgelb}}llllll>{\columncolor{hgruen}}l>{\columncolor{dgruen}}l>{\columncolor{hgruen}}ll}
-
-%GELBE KOLONNE						BLAUE UND PINKIGE KOLONNE										GRUENE KOLONNE
-\titleCell{hgelb}{\textbf{Turbine}}	&&\titleCell{hblau}{\textbf{Elektrotechnik}}						&&\titleCell{hgruen}{\textbf{Abwassertechnik}}&\\
-&\textbf{Turbinentyp}					&&&\cC{hblau}	&\cC{dblau}\textbf{Wechselrichter}			&\cC{hblau}	&&&\textbf{Tanks}				&&\\
-&Pelton-Turbine							&&&\cC{hblau}	&\cC{dblau}\textbf{Speicherakkus}			&\cC{hblau}	&&&\textbf{Bypass}				&&\\
-&\textbf{Generatortyp}					&&&\cC{hblau}	&\cC{dblau}									&\cC{hblau}	&&&	für Turbine									&&\\
-&Gleichstrom								&&&\titleCell{hblau}{ }																						&&&								&&\\
-&\textbf{Anzahl}							&&&&													&															&&&								&&\\
-%ACHTUNG WEISSER ZWISCHENRAUM
-&28												&&&\titleCell{hpink}{\textbf{Bedienung}}															&&&								&&\\
-&													&&&\cC{hpink}	&\cC{dpink}\textbf{Anzeige}			&\cC{hpink}							&&&\textbf{}						&&\\
-&													&&&\cC{hpink}	&\cC{dpink}der Aktuellen Leistung	&\cC{hpink}						&&& 							 	&&\\
-&													&&&\cC{hpink}	&\cC{dpink}								&\cC{hpink}								&&&								&&\\
-&													&&&\cC{hpink}	&\cC{dpink}\textbf{}							&\cC{hpink}						&&&								&&\\
-&													&&&\cC{hpink}	&\cC{dpink}							&\cC{hpink}									&&& 								&&\\
-\titleCell{hgelb}{ }				&&\titleCell{hpink}{ }											&&\titleCell{hgruen}{ }&
+\newcommand{\HY}{\hyphenpenalty = 25\exhyphenpenalty = 25}
+\begin{tabular}[H]{>{\HY\RaggedRight}p{3cm} >{\HY\RaggedRight}p{2cm} >{\HY\RaggedRight}p{4cm} >{\HY\RaggedRight}p{3.5cm} >{\HY\RaggedRight}p{1.2cm}}
+\hline
+\textbf{Bestandteil}&\textbf{Modell}&\textbf{Funktion}&\textbf{Specs}&\textbf{Stckz.}\\
+\hline
+\rowcolor{dgelb}
+\multicolumn{5}{l}{\textbf{Stromerzeugung}}\\
+Turbine&Pelton&&??&28\\
+Generator&??&Gleichstromwandlung?&??&28\\
+\rowcolor{dblau}
+\multicolumn{5}{l}{\textbf{Elektrotechnik}}\\
+Wechselrichter&&&&\\
+Speicherakku&&&&\\
+\rowcolor{dpink}
+\multicolumn{5}{l}{\textbf{Kommunikation}}\\
+Anzeige&&zeigt Turbinenleistung an&&\\
+\rowcolor{dgruen}
+\multicolumn{5}{l}{\textbf{Abwassertechnik}}\\
+Tank&??&Sammelt das Abwasser von den oberen Stockwerken&1000m3, trichterförmig&??\\
+Bypass&&Umleitung zur Entlastung der Turbine?&&\\
+\hline
 \end{tabular}
-\end{table}
 
 
 Im Grobkonzept 1 soll die Pelton Turbine direkt in die Fallleitung eingebaut werden. Die Turbine wird so in das vorhandene System integriert ohne das größere Umbauten nötig sind.
