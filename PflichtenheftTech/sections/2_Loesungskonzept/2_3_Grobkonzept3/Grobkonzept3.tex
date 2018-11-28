@@ -1,30 +1,31 @@
 \subsection{Grobkonzept 3} \label{subsec:grobkonzept3}
+\subsection{Grobkonzept 2} \label{subsec:grobkonzept2}
 \begin{tabular}[H]{>{\HY\RaggedRight}p{3cm} >{\HY\RaggedRight}p{2cm} >{\HY\RaggedRight}p{4cm} >{\HY\RaggedRight}p{3.5cm} >{\HY\RaggedRight}p{1.2cm}}
 \hline
-\textbf{Bestandteil}&\textbf{Modell}&\textbf{Funktion}&\textbf{Specs}&\textbf{Stckz.}\\
+	\textbf{Bestandteil}		&\textbf{Typ}			&\textbf{Funktion}									&\textbf{Specs}			&\textbf{Anzahl}\\
 \hline
 \rowcolor{dgelb}
 \multicolumn{5}{l}{\textbf{Stromerzeugung}}\\
-Turbine&Pelton&&??&5\\
-Generator&??&Gleichstromwandlung?&??&5\\
+	Turbine 					&Pelton 				&Umwandlung in Rotationsenergie						&							&5	\\
+	Generator					&Gleichstrom 			&Umwandlung in elektrische Energie					&	 						&5	\\
 \rowcolor{dblau}
 \multicolumn{5}{l}{\textbf{Elektrotechnik}}\\
-Wechselrichter&&&&\\
-Ventilsteuerung&&&&\\
+ 	Wechselrichter				&						&Einspeisung ins Stromnetz							&							&1	\\
+ 	Ventilsteuerung				&						&Öffnet/schliesst Ventile je nach Füllstand			&							&1	\\
 \rowcolor{dpink}
-\multicolumn{5}{l}{\textbf{Kommunikation}}\\
-Anzeige&&zeigt Tankfüllstand an&&\\
-Anzeige&&zeigt Turbinenleistung an&&\\
+\multicolumn{5}{l}{\textbf{Bedienung}}\\
+ 	Anzeige 					&						&zeigt Tankfüllstände und die Generatordaten an 	&							&1	\\
+ 	Alarmleuchte				&						&Warnt bei zu hochem Füllstand in einem der Tanks 	&							&1	\\
 \rowcolor{dgruen}
 \multicolumn{5}{l}{\textbf{Abwassertechnik}}\\
-Tank&??&Sammelt das Abwasser von den oberen Stockwerken&1000m3, trichterförmig&5\\
-Ablassventil&?&Entlässt das Abwasser aus dem Tank&&\\
-Entlüftung&??&&&\\
-Notüberlauf&&&&\\
-Füllstandsensor&&Misst den Füllstand des Tanks&&\\
-Druckleitungen&&Machen hohe Wassersäulen möglich?&Druckfestigkeit >40 bar&\\
-Bypass&&Umleitung zur Entlastung vom Tank&&\\
-Bypass&&Umleitung zur Entlastung der Turbine&&\\
+	Tanks 						& 						&Zwischenspeicher für Abwasser 						&4m3, trichterförmig		&5 	\\
+	Ablassventil				&						&Entlässt das Abwasser aus dem Tank 				&							&5	\\
+	Entlüftung					&						&ermöglicht Luftaustausch, entlässt Gase			&							&5	\\
+	Notüberlauf					&						&Verhindert, dass Tank zu voll wird					&							&5	\\
+	Füllstandsensor				&						&Misst den Füllstand des Tanks						&							&5	\\
+	Druckleitungen				&						&Machen hohe Wassersäulen möglich?					&Druckfestigkeit >40 bar	&5	\\
+	Bypass für Turbinen 		&Manuell				&ermöglicht Wartung der Turbine 					&							&5	\\
+	Bypass für Tanks 			&Manuell				&ermöglicht Wartung und Reingung der Tanks 			&	 						&5	\\ 
 \hline
 \end{tabular}
 
