@@ -26,38 +26,36 @@ Zeile-Kriterum ist weniger wichtig wie Spalternkriterium 0\\
 \newcolumntype{C}[1]{>{\centering}p{#1}}
 \begin{table}[H]
 \small
-\begin{tabular}{lC{1.5cm}C{1.5cm}C{1.5cm}C{1.5cm}C{1.5cm}l}
+\begin{tabular}{lC{1.2cm}C{1.2cm}C{1.2cm}C{1.2cm}C{1.2cm}l}
 \multicolumn{7}{c}{\textbf{Erfüllungsgrad}}\\
 \hline
-&minimal&&mittel&&maximal&\\
+&min.&&mittel&&max.&\\
 &\textbf{1}&\textbf{2}&\textbf{3}&\textbf{4}&\textbf{5}&Messgrösse\\
 \hline
 1.1. Wirkungsgrad				&<50&51-60&61-70&71-80&>81&\%\\
-1.2. Leistung					&<35&36-40&41-45&46-50&>50&kWh\\
-1.3. Komplexität					&hoch&erhöht&mittel&mässig&gering&vgl. Skala 1\\
-2.1. Verstopfungsgefahr			&hoch&erhöht&mittel&mässig&gering&vgl. Skala 2\\
-2.2. Platzbedarf					&gross&erhöht&mittel&gering&niedrig&Volumen\\
-2.3. Wartung						&dauernd&öfters&normal&selten&nie&Zeitinterval\\
-&&&&&&\\
+1.2. Leistung					&<40&40-44&45-50&51-54&>55&kWh\\
+1.3. Schlichtheit				&>16&15-12&11-8&7-4&<3&Anz. versch. Teile\\
+2.1. Verstopfungssicherheit		&hoch&erhöht&mittel&mässig&gering&a)\\
+2.2. Platzbedarf					&gross&erhöht&mittel&gering&niedrig&Schätzung m\textsuperscript{3}\\
+2.3. Wartung						&52-13&12-6&5-2&1&0&b)\\
 \end{tabular}
 \end{table}
-Komplexität-Skala
-\begin{table}[H]
-\small
-\begin{tabular}{lllllll}
-\end{tabular}
-\end{table}
+\begin{scriptsize}
+a) Abschätzung via Recherche\\
+b) geschätze Frequenz [1\textbackslash J]
+\end{scriptsize}
+
 \newpage
 \renewcommand\arraystretch{1.5}
 \newcolumntype{R}[1]{>{\HY\RaggedLeft}p{#1}}
 \newcolumntype{L}[1]{>{\HY\RaggedRight}p{#1}}
-\renewcommand{\vtcl}[1]{\rotatebox{270}{\textbf{#1}}}
+\renewcommand{\vtcl}[1]{\rotatebox{90}{\textbf{#1}}}
 \begin{table}[H]
 \small
 \rotatebox{90}{
 %|R{1.2cm}R{0.4cm}R{0.8cm} \scriptsize
 %|R{1cm}R{0.2cm}R{0.5cm} \tiny
-\begin{tabular}{L{3cm}R{1.5cm}L{0.8cm}|R{1.4cm}R{0.5cm}R{1cm}|R{1.4cm}R{0.5cm}R{1cm}|R{1.4cm}R{0.5cm}R{1cm}|R{1.4cm}R{0.5cm}R{1cm}|}%|R{1cm}R{0.5cm}R{0.8cm}
+\begin{tabular}{L{3.5cm}R{1.5cm}L{0.8cm}|R{1.4cm}R{0.5cm}r|R{1.4cm}R{0.5cm}r|R{1.4cm}R{0.5cm}r|R{1.4cm}R{0.5cm}r|}%|R{1cm}R{0.5cm}R{0.8cm}
 &&Max&\multicolumn{3}{c}{Grobkonzept 1}&\multicolumn{3}{c}{Grobkonzept 2}&\multicolumn{3}{c}{Grobkonzept 3}&\multicolumn{3}{c}{Grobkonzept 4}\\
 \textbf{Zielkriterium}&\vtcl{Gewichtung}&\vtcl{Nutzwert}&\vtcl{Wert}&\vtcl{Erfüllungsgrad}&\vtcl{Nutzwert}&\vtcl{Wert}&\vtcl{Erfüllungsgrad}&\vtcl{Nutzwert}&\vtcl{Wert}&\vtcl{Erfüllungsgrad}&\vtcl{Nutzwert}&\vtcl{Wert}&\vtcl{Erfüllungsgrad}&\vtcl{Nutzwert}\\
 \hline
@@ -66,18 +64,18 @@ Komplexität-Skala
 \multicolumn{3}{l|}{\textbf{Elektrotechnik}}&\multicolumn{3}{r|}{}&\multicolumn{3}{r|}{}&\multicolumn{3}{r|}{}&\multicolumn{3}{r|}{}\\
 %										%G1 Wert		%G1 Erf.		G1 Nutz			%G2 Wert		%G2 Erf.		G2 Nutz			%G3 Wert		%G3 Erf.		G2 Nutz			%G4 Wert		%G4 Erf.		G4 Nutz
 Wirkungsgrad			&13\%		&0.650	&32\%		&1			&0.13			&67.2\%		&3			&0.39			&64.1\%		&3			&0.39			&80\%		&4			&0.52\\
-Leistung				&30\%		&1.500	&21.5kWh		&1			&0.3				&44.6kWh		&3			&0.9				&42.6kWh		&3			&0.90			&53.1kWh		&5			&1.50\\
-Komplexität			&6.5\%		&0.325	&mässig		&4			&0.26			&erhöht		&2			&0.26			&mittel		&3			&0.20			&mässig		&4			&0.20\\
+Leistung				&30\%		&1.500	&21.5kWh		&1			&0.3	0			&44.6kWh		&2			&0.6	0			&42.6kWh		&2			&0.60			&53.1kWh		&4			&1.20\\
+Schlichtheit			&6.5\%		&0.325	&6			&4			&0.26			&15			&2			&0.26			&14			&2			&0.20			&6			&4			&0.26\\
 %&&&&&&&&&&&&&&\\
 \rowcolor{hellgrau}
 \multicolumn{3}{l|}{\textbf{Abwassertechnik}}&\multicolumn{3}{r|}{}&\multicolumn{3}{r|}{}&\multicolumn{3}{r|}{}&\multicolumn{3}{r|}{}\\
-Verstopfungsgefahr	&20\%		&1.000	&mässig		&4			&0.8	0			&gering		&5			&1.0	0			&gering		&5			&1.00			&mässig		&4			&0.80\\
-Platzbedarf			&24\%		&1.200	&mässig		&4			&0.96			&erhöht		&2			&0.48			&erhöht		&2			&0.48			&gering		&5			&1.20\\
-Wartung				&6.5\%		&0.325	&öfters		&2			&0.26			&öfters		&2			&0.26			&normal		&3			&0.20			&normal		&3			&0.20\\
+Verstopfungssicherheit&20\%		&1.000	&mässig		&4			&0.8	0			&gering		&5			&1.0	0			&gering		&5			&1.00			&mässig		&4			&0.80\\
+Platzsparung			&24\%		&1.200	&mässig		&4			&0.96			&erhöht		&2			&0.48			&erhöht		&2			&0.48			&gering		&5			&1.20\\
+Wartung				&6.5\%		&0.325	&5			&2			&0.26			&3			&2			&0.26			&1			&4			&0.20			&1			&4			&0.20\\
 &&&&&&&&&&&&&&\\
 \hline
-Summe				&100.0\%		&5.000	&			&			&2.71			&			&			&3.29			&			&			&3.17			&			&			&4.42\\
-Erfüllungsgrad [\%]	&&100.0				&			&			&54				&			&			&66				&			&			&63				&			&			&88\\
+Summe				&100.0\%		&5.000	&			&			&2.71			&			&			&2.99			&			&			&2.81			&			&			&4.18\\
+Erfüllungsgrad [\%]	&&100.0				&			&			&54				&			&			&60				&			&			&56				&			&			&84\\
 \multicolumn{3}{l}{\textbf{Rangfolge}}&\multicolumn{3}{r|}{\textbf{4}}&\multicolumn{3}{r|}{\textbf{2}}&\multicolumn{3}{r|}{\textbf{3}}&\multicolumn{3}{r|}{\textbf{1}}\\
 \end{tabular}
 }
