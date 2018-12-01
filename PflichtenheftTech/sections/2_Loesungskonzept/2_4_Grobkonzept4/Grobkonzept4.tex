@@ -1,29 +1,35 @@
 \subsection{Grobkonzept 4} \label{subsec:grobkonzept3}
 \begin{table}[H]
 \footnotesize
-\begin{tabular}{>{\HY\RaggedRight}p{3cm} >{\HY\RaggedRight}p{2.2cm} >{\HY\RaggedRight}p{4cm} >{\HY\RaggedRight}p{3.3cm} >{\HY\RaggedRight}p{1.2cm}}
+\begin{tabular}{>{\HY\RaggedRight}p{3cm} >{\HY\RaggedRight}p{3.5cm} >{\HY\RaggedRight}p{6cm} >{\HY\RaggedRight}p{1.2cm}}
 \hline
-	\textbf{Bestandteil}		&\textbf{Typ}			&\textbf{Funktion}									&\textbf{Specs}			&\textbf{Anz.}\\
-	\hline
+\textbf{Bestandteil}&\textbf{Typ}&\textbf{Funktion}&\textbf{Anz.}\\
+\hline
+
 \rowcolor{dgelb}
-\multicolumn{5}{l}{\textbf{Stromerzeugung}}\\
-	Wasserlift 				& 						&Umwandlung in Rotationsenergie						&							&5	\\
-	Generator				&AC						&Umwandlung in elektrische Energie					&???							&5	\\
-\rowcolor{dblau}
-\multicolumn{5}{l}{\textbf{Elektrotechnik}}\\
- 	Wechselrichter			&						&Einspeisung ins Stromnetz							&							&1	\\
+\multicolumn{4}{l}{\textbf{Stromerzeugung}}\\
+Rohrkette&&Umwandlung potenzielle Energie zu Rotation&6\\
+Zahnrad&&Umdehungszahl für Generator anpassen&6\\
+Generator&AC&Umwandlung in elektrische Energie&6\\
+Gleichrichter&AC/DC Wandler&Wechselstrom zu Gleichstrom&6\\
+DC/DC Konverter&&Verhindern das Strom zurückfliessen kann&6\\
+Wechselrichter&&Umwandlung DC in AC (230V)&1\\
+
 \rowcolor{dpink}
-\multicolumn{5}{l}{\textbf{Bedienung}}\\
- 	Anzeige 					&Display					&zeigt Tankfüllstände und Generatordaten an 			&							&1	\\
+\multicolumn{4}{l}{\textbf{Kontrollsystem}}\\
+PC&&Anlagesteuerung&1\\
+SPS&Beckhof&Analoge und Digitale Aus- und Eingänge&1\\
+
 \rowcolor{dgruen}
-\multicolumn{5}{l}{\textbf{Abwassertechnik}}\\
-Bypass						&Absperrklappe			&Umleitung für Wartungsarbeiten am Wasserlift 		&							&6\\
-Bypass 						&in Wirklichkeit			&sind es viel mehr als 6								&5*13+16=					&81\\
-Leitung						&						&für Wartungsarbeiten 								&							&1\\
+\multicolumn{4}{l}{\textbf{Abwassertechnik}}\\
+Ventile&Absperrklappe&Umleitung in Fallleitung für Wartungsarbeiten am Wasserlift&74\\
+Fallleitung&&Für Wartungsarbeiten&1\\
+
 \hline
 \end{tabular}
 \end{table}
-Im Grobkonzepts 4 wird die potenzielle Energie des Abwassers mit der Wasserlifttechnik ausgenutzt. Das Abwasser fliesst in eine Schaufel und wird in der Schaufel im Rohr nach unten transportiert. Somit erhält der Lift eine Bewegung nach unten und entleert am tiefsten Punkt das Abwasser. Die Leitung ist nie komplett mit Wasser gefüllt, daher kommt es zu einem Luftwiderstand in der Leitung, der das Abwasser abbremst.
+Im Grobkonzepts 4 wird die potenzielle Energie des Abwassers mit der Wasserlifttechnik ausgenutzt. Das Abwasser fliesst in eine Schaufel und wird in der Schaufel im Rohr nach unten transportiert. Somit erhält der Lift eine Bewegung nach unten und entleert am tiefsten Punkt das Abwasser. Die Drehbewegung, welche die Rohrkette erzeugt ist eher langsam. Daher müss die Drehbewegung mit einem Zahnradsystem verschnellert werden, damit die Mindestdrehzahl des Generators erreicht wird. Muss das System gewartet werden, wird das Abwasser in eine normale Fallleitung, mithilfe von Ventilen, umgeleitet. Damit der Strom der Turbinen zusammengeführt werden kann. Muss der Wechselstrom zuerst in Gleichstrom umgewandelt werden. Dieser wird auf einen DC-DC Konverter gelegt damit kein Strom zurück in den Generator fliessen kann. Anschliessen wird der Gleichstrom mit einem Wechselrichter auf Netz-Spannung umgewandelt. Ein Kontrollsystem steuert die Anlage und überwacht die Energiegewinnung und schreitet bei Störungen ein.
+
 \newpage
 \begin{wrapfigure}{r}{0.5\textwidth}
   \begin{center}
