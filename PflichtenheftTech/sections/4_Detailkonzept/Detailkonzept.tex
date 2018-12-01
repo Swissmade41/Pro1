@@ -2,21 +2,25 @@
 
 Das Konzept mit den Wasserliften ist am besten geeignet für unsere Anwendung. Es existieren bereits solche «Rohrkettenförderer», die jedoch Produkte hinaufbefördern. Wir nutzen dieses System um das Wasser nach unten zu befördern und dabei Energie zu gewinnen. Es werden insgesamt sechs Lifte benötigt. Fünf Lifte überwinden je 60.08\si{m} und der unterste Lift überwindet 80.24\si{m}. In der Abbildung \ref{fig:PrinzipGrobkonzept4} \nameref{fig:PrinzipGrobkonzept4} ist dies grafisch dargestellt.
 
+
+\newpage
+
 \subsection{Elektronik}
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=\linewidth]{Skizze_GK4.png}
-\caption{Prinzipschema}
-\label{fig:Prinzipschema}
-\end{figure}
+%TODO Michel: Bild (Michel) mit allen Komponenten abgebildet einfügen. Kurze Beschreibung mit Verweis auf bild
 
 \paragraph{Funktionsbeschreibung}
 Die potentielle Energie des Abwassers wird über ein Laufrad in kinetische Energie umgewandelt. Mittels eines Getriebes wird die vom Laufrad kommende Drehzahl dem Generator angepasst, dieser wandelt die kinetische Energie in elektrische um. Der Gleichrichter transformiert den 3 Phasen Drehstrom in einen 2 poligen Gleichstrom. Um Rückkoppelungen auf dem DC-Bus zu vermeiden schalten wir zwischen den Gleichrichter und den DC-Bus einen Bus-Konverter. Die summierte Energie aller sechs Generatorenstränge wird über einen Wechselrichter ins Stromnetz eingespeist.
 Zur Überwachung und auch zur Ansteuerung der Umlenkventile im Wartungsfall wird eine SPS verwendet.
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\linewidth]{Skizze_GK4.png}
+\caption{Prinzipschema}
+\label{fig:Prinzipschema}
+\end{figure}
 
-%TODO Michel: Bild (Michel) mit allen Komponenten abgebildet einfügen. Kurze Beschreibung mit Verweis auf bild
+\newpage
 
 \paragraph{Generator}
 
