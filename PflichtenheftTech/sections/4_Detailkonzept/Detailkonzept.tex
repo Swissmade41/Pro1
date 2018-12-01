@@ -2,25 +2,21 @@
 
 Das Konzept mit den Wasserliften ist am besten geeignet für unsere Anwendung. Es existieren bereits solche «Rohrkettenförderer», die jedoch Produkte hinaufbefördern. Wir nutzen dieses System um das Wasser nach unten zu befördern und dabei Energie zu gewinnen. Es werden insgesamt sechs Lifte benötigt. Fünf Lifte überwinden je 60.08\si{m} und der unterste Lift überwindet 80.24\si{m}. In der Abbildung \ref{fig:PrinzipGrobkonzept4} \nameref{fig:PrinzipGrobkonzept4} ist dies grafisch dargestellt.
 
-
-\newpage
-
 \subsection{Elektronik}
 
-%TODO Michel: Bild (Michel) mit allen Komponenten abgebildet einfügen. Kurze Beschreibung mit Verweis auf bild
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{Skizze_GK4.png}
+\caption{Prinzipschema}
+\label{fig:Prinzipschema}
+\end{figure}
 
 \paragraph{Funktionsbeschreibung}
 Die potentielle Energie des Abwassers wird über ein Laufrad in kinetische Energie umgewandelt. Mittels eines Getriebes wird die vom Laufrad kommende Drehzahl dem Generator angepasst, dieser wandelt die kinetische Energie in elektrische um. Der Gleichrichter transformiert den 3 Phasen Drehstrom in einen 2 poligen Gleichstrom. Um Rückkoppelungen auf dem DC-Bus zu vermeiden schalten wir zwischen den Gleichrichter und den DC-Bus einen Bus-Konverter. Die summierte Energie aller sechs Generatorenstränge wird über einen Wechselrichter ins Stromnetz eingespeist.
 Zur Überwachung und auch zur Ansteuerung der Umlenkventile im Wartungsfall wird eine SPS verwendet.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.9\linewidth]{Skizze_GK4.png}
-\caption{Prinzipschema}
-\label{fig:Prinzipschema}
-\end{figure}
 
-\newpage
+%TODO Michel: Bild (Michel) mit allen Komponenten abgebildet einfügen. Kurze Beschreibung mit Verweis auf bild
 
 \paragraph{Generator}
 
@@ -58,8 +54,10 @@ In der Förderungsanlage wird ein Asynchrongenerator verbaut. Die Firma Voltacon
 
 Das Model Hybrid Wechselrichter HSI10000 entspricht den gewünschten Anforderungen für unsere Förderungsanlage. Der Wechselrichter transformiert die 48VDC auf 230VAC mit einer Frequenz von 50\si{\hertz}. Das Gerät kann bis zu einer Leistung von 10KW erbringen. Mittels integrierten Displays kann die erbrachte Leistung zusätzlich abgelesen werden. 
 
-Gemäss Datenblatt lassen sich Ströme bis 200A regeln. Um eine begrenzt Energie zu speichern ist eine Batterie eingebaut, um ???.....
-, falls die Leistungen doch anderweitig im Hochhaus genützt werden soll %(wie anderstwertig?)%\. Eine eingebaute Uhr für verschiedene Ein/Aus-Betriebsarten kann für längere Unterbrüche genützt werden.  %(für was gut?)%\
+Gemäss Datenblatt lassen die Ströme regeln bis 200A. 
+Der Wechselrichter hat einen Netzunabhängigen Energiespeicher der mittels Batterie geladen werden könnte (Batterie-Backup). Für die die Kommunikation sind verschieden Optionen vorhanden wie über den USB Port, RS-232 oder den SNMP (Simple Network Management Protocol) Überwachungssoftware für Echtzeitstatusanzeige und-steuerung.
+
+Kosten: 3'401\si{Fr}
 
 
 \paragraph{Kontrollsystem}
