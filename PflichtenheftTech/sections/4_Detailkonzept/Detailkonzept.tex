@@ -4,18 +4,35 @@ Das Konzept mit den Wasserliften ist am besten geeignet für unsere Anwendung. E
 
 \subsection{Elektronik}
 
+%TODO Michel: Bild (Michel) mit allen Komponenten abgebildet einfügen. Kurze Beschreibung mit Verweis auf bild
+
 \paragraph{Generator}
+
+%TODO Lars: Tagesgangkurve beschreiben und dadurch mindestleitung Generator (3kW) begründen: (Tagesenergie 191.1MJ)
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{tagesGangKurve.png}
 \caption{Typische Tagesgangkurve. \cite{peakWaterDemand}}
 \label{fig:tagesGangKurve}
 \end{figure}
-\paragraph{Anzeige}
 
-\newpage
+%TODO Lars: Ausgesuchter Generator mit Kosten auflisten; Warum dieser Generator?
+
 \paragraph{Wechselrichter}
-Damit die gewonnen Leistung von dem Asynchrongenerator in das Netz eingespiesen werden kann, muss der Wechselrichter folgende Eigenschaften aufweisen. 
+
+%TODO Lars: Ausgesuchter Wechselrichter mit Kosten auflisten; Warum dieser Wechselrichter?
+
+\paragraph{DC-DC Wandler}
+
+%TODO Lars: Ausgesuchter DC-DC Wandler mit Kosten auflisten; Warum dieser DC-DC Wandler(Kein Strom darf zurückfliessen!)?
+
+\paragraph{Wechselrichter}
+
+%TODO Roni: Kosten einfügen; Kann die Leistung die Angezeigt wird auch auf einen PC übertragen werden? Kommunikationsschnittstelle? Unterster Abschnitt nochmals überarbeiten
+
+
+Damit die gewonnen Leistung in das Netz eingespiesen werden kann, muss der Wechselrichter folgende Eigenschaften aufweisen. 
 
 Leistung: 	9KW \newline
 Ausgang:	3Phasen \newline
@@ -23,12 +40,28 @@ Kosten:		Die Kosten sollen möglichst gering gehalten werden. \newline
 
 In der Förderungsanlage wird ein Asynchrongenerator verbaut. Die Firma Voltacon ist bekannt für ihre Hochleistungswechselrichter.
 
- Das Model Hybrid Wechselrichter HSI10000 entspricht den gewünschten Anforderungen für unsere Förderungsanlage. Der Generator lieferte eine gewisse Spannung die vom Gleichrichter auf die 48VDC geglättet wird. Der Wechselrichter transformiert die 48VDC in 230VAC mit einer Frequenz von 50 Hertz. Das Gerät kann bis zu einer Leistung von 10KW erbringen. Mittels integrierten Displays kann die die erbrachte Leistung abgelesen werden. 
+Das Model Hybrid Wechselrichter HSI10000 entspricht den gewünschten Anforderungen für unsere Förderungsanlage. Der Wechselrichter transformiert die 48VDC auf 230VAC mit einer Frequenz von 50\si{\hertz}. Das Gerät kann bis zu einer Leistung von 10KW erbringen. Mittels integrierten Displays kann die erbrachte Leistung zusätzlich abgelesen werden. 
 
-Gemäss Datenblatt lassen die Ströme regeln bis 200A. Mit einer Batterie kann als zusätzliche Unterstützung dienen, falls die Leistungen doch anderweitig im Hochhaus genützt werden soll. Eine eingebaute Uhr für verschiedene Ein/Aus-Betriebsarten kann für längere Unterbrüche genützt werden.
+Gemäss Datenblatt lassen sich Ströme bis 200A regeln. Um eine begrenzt Energie zu speichern ist eine Batterie eingebaut, um ???.....
+, falls die Leistungen doch anderweitig im Hochhaus genützt werden soll %(wie anderstwertig?)%\. Eine eingebaute Uhr für verschiedene Ein/Aus-Betriebsarten kann für längere Unterbrüche genützt werden.  %(für was gut?)%\
 
 
-\cite{•}
+\paragraph{Kontrollsystem}
+
+%TODO Lars: Kontrollsystem in Worte Fassen: 
+
+%SPS Beckhof besitzt: 
+%1 Kontrollerklemme BK9050 (200.-)
+%20 Digitale Ausgangsklemmen KL1114 (1 Klemme = 100.-)	;Für Ventile schalten
+%20 Digitale Eingangsklemmen KL2134 (1 Klemme = 100.-)	;Für überprüfen ob Ventile geschaltet ist
+%7 AnalogEingangsklemmen KL3162 (1 Klemme = 100.-)		;Strommessung über hochohmigen widerstand
+%1 Abschlussklemme KL9010 (50.-)
+
+%IndustriePC suchen (Um die 1000.-)
+
+
+\newpage
+
 
 \subsection{Mechanik}
 
@@ -53,12 +86,18 @@ Wir wollen keinen Schutt nach oben befördern, daher muss dieses System auf unse
 \end{figure}
 
 
-Um diesen Wasserlift zu bauen beauftragen wir die Firma Schrage, ein führender Speziallist für Rohrketten, die in Deutschland zu Hause ist, beauftragt. Die Kosten belaufen sich für die 60.08\si{m} Höhendifferenz auf ca. 10'000\si{Fr} pro Lift und für die 80.24\si{m} Höhendifferenz auf ca. 13'000\si{Fr}. Insgesamt würde die Analage mit den Rohrketten und Stösselkettenrad insgesamt ca.63'000\si{Fr} kosten. \cite{schrage}
-
-\paragraph{Rohr}
-
-Gerberit...
+Um diesen Wasserlift zu bauen beauftragen wir die Firma Schrage, ein führender Speziallist für Rohrketten, die in Deutschland zu Hause ist, beauftragt. Die Kosten belaufen sich für die 60.08\si{m} Höhendifferenz auf ca. 10'000\si{Fr} pro Lift und für die 80.24\si{m} Höhendifferenz auf ca. 13'000\si{Fr}. Insgesamt würde die Analage mit den Rohrketten, Rohr und Stösselkettenrad ca.63'000\si{Fr} kosten. \cite{schrage}
 
 \newpage
 
+\paragraph{Zahnradsytem}
+%TODO Lars: Mindestdrehzahl dem Generator anpassen. Raddurchmesser für den Richtiungswechsel der rohrketten. Einen guten Wert annehmen
+
+\paragraph{Ventile}
+
+%TODO Roni: Ventile aussuchen die das Wasser entweder in die Falleitung oder in das rohrketten rohr leitet
+
+
 \subsection{Kosten}
+
+%TODO Sonntag: Alle Kosten zusammentragen
