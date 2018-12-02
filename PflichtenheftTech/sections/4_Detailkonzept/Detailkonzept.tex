@@ -12,11 +12,8 @@ Das Konzept mit den Wasserliften ist am besten geeignet für unsere Anwendung. E
 \end{figure}
 
 \paragraph{Funktionsbeschreibung}
-Die potentielle Energie des Abwassers wird über ein Laufrad in kinetische Energie umgewandelt. Mittels eines Getriebes wird die vom Laufrad kommende Drehzahl dem Generator angepasst, dieser wandelt die kinetische Energie in elektrische um. Der Gleichrichter transformiert den 3 Phasen Drehstrom in einen 2 poligen Gleichstrom. Um Rückkoppelungen auf dem DC-Bus zu vermeiden schalten wir zwischen den Gleichrichter und den DC-Bus einen Bus-Konverter. Die summierte Energie aller sechs Generatorenstränge wird über einen Wechselrichter ins Stromnetz eingespeist.
-Zur Überwachung und auch zur Ansteuerung der Umlenkventile im Wartungsfall wird eine SPS verwendet.
 
-
-%TODO Michel: Bild (Michel) mit allen Komponenten abgebildet einfügen. Kurze Beschreibung mit Verweis auf bild
+Die potentielle Energie des Abwassers wird über ein Laufrad in kinetische Energie umgewandelt. Mit einem Getriebe wird die vom Laufrad kommende Drehzahl dem Generator angepasst, dieser wandelt die kinetische Energie in elektrische um. Der Gleichrichter transformiert den 3 Phasen Drehstrom in einen 2 poligen Gleichstrom. Anschliessend wird durch ein DC-DC Konverter eine Rückkoppelung auf den Genreator verhindert. Weiter stellt der Konverter sicher, dass eine stabile Ausgangsspannung anliegt und das der DC-Bus galvanisch vom Generator und Wechselrichter getrennt ist. Die summierte Energie aller sechs Generatorenstränge wird über einen Wechselrichter ins Stromnetz eingespeist. Zur Überwachung und auch zur Ansteuerung der Umlenkventile im Wartungsfall wird eine SPS verwendet.
 
 \paragraph{Generator}
 
@@ -29,7 +26,7 @@ Zur Überwachung und auch zur Ansteuerung der Umlenkventile im Wartungsfall wird
 \label{fig:tagesGangKurve}
 \end{figure}
 
-%TODO Lars: Ausgesuchter Generator mit Kosten auflisten; Warum dieser Generator?
+%TODO Lars: Ausgesuchter Generator mit Kosten auflisten; Warum dieser Generator? Drehzahl beachten -> Zahnradsystem
 
 \paragraph{Wechselrichter nach Generator}
 
@@ -41,9 +38,6 @@ Zur Überwachung und auch zur Ansteuerung der Umlenkventile im Wartungsfall wird
 
 \paragraph{Wechselrichter für Netzeinspeisung} \label{par:WechselrichterNetz}
 
-%TODO Roni: Kosten einfügen; Kann die Leistung die Angezeigt wird auch auf einen PC übertragen werden? Kommunikationsschnittstelle? Unterster Abschnitt nochmals überarbeiten
-
-
 Damit die gewonnen Leistung in das Netz eingespiesen werden kann, muss der Wechselrichter folgende Eigenschaften aufweisen. 
 
 \textbf{Leistung:}		9KW \newline
@@ -54,10 +48,7 @@ In der Förderungsanlage wird ein Asynchrongenerator verbaut. Die Firma Voltacon
 
 Das Model Hybrid Wechselrichter HSI10000 entspricht den gewünschten Anforderungen für unsere Förderungsanlage. Der Wechselrichter transformiert die 48VDC auf 230VAC mit einer Frequenz von 50\si{\hertz}. Das Gerät kann bis zu einer Leistung von 10KW erbringen. Mittels integrierten Displays kann die erbrachte Leistung zusätzlich abgelesen werden. 
 
-Gemäss Datenblatt lassen die Ströme regeln bis 200A. 
-Der Wechselrichter hat einen Netzunabhängigen Energiespeicher der mittels Batterie geladen werden könnte (Batterie-Backup). Für die die Kommunikation sind verschieden Optionen vorhanden wie über den USB Port, RS-232 oder den SNMP (Simple Network Management Protocol) Überwachungssoftware für Echtzeitstatusanzeige und-steuerung.
-
-Kosten: 3'401\si{Fr}
+Gemäss Datenblatt lassen sich Ströme bis 200A regeln. Der Wechselrichter hat einen netzunabhängigen Energiespeicher (Batterie-Backup). Um die Daten des Wechselrichters weiterzuleiten stehen verschieden Kommunikationsmittel zur verfügung. Die Informationen können über einen USB Port, RS-232 oder den SNMP (Simple Network Management Protocol) Überwachungssoftware für Echtzeitstatusanzeige und-steuerung übermittelt werden. Die kosten des Wechselrichters belaufen sich auf 3'401\si{Fr}.
 
 
 \paragraph{Kontrollsystem}
@@ -77,7 +68,7 @@ Das Kontrollsystem steuert und überwacht die Anlage und ist wie folgt aufgebaut
 \end{tabular}
 \end{table}
 
-Die Kosten für die Komponenten betragen 5900 \si{Fr}. Für die Entwicklung der Software werden 3 PM benötigt und kostet einmalig 48\si{Fr}. 
+Die Kosten für die Komponenten betragen 5900 \si{Fr}. Für die Entwicklung der Software werden 3 PM benötigt und kostet einmalig 48'000\si{Fr}. 
 
 \newpage
 
@@ -112,9 +103,10 @@ Um diesen Wasserlift zu bauen beauftragen wir die Firma Schrage, ein führender 
 \paragraph{Zahnradsytem}
 %TODO Lars: Mindestdrehzahl dem Generator anpassen. Raddurchmesser für den Richtiungswechsel der rohrketten. Einen guten Wert annehmen
 
-\paragraph{Bypass}
+\paragraph{Umleitventil}
 
 %TODO Roni: Ventile aussuchen die das Wasser entweder in die Falleitung oder in das rohrketten rohr leitet
+% Genaues Ventil aussuchen. Anforderung 24V, Korrisionsbeständig
 
 Mit einem Bypass würde die Fallleitung bei Störungen angesteuert werden. Wegen der Rohrdimensionen würde zuerst einen T-Stück installiert werden, dann zwischen zwei Flansch würde der Bypass montiert werden. Das Material für den Bypass würde aus PVC sein. Mit dem SPS kann der Bypass bei Störungsfällen angesteuert werden.
 
