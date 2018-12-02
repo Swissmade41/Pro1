@@ -31,7 +31,7 @@ Zur Überwachung und auch zur Ansteuerung der Umlenkventile im Wartungsfall wird
 
 %TODO Lars: Ausgesuchter Generator mit Kosten auflisten; Warum dieser Generator?
 
-\paragraph{Wechselrichter}
+\paragraph{Wechselrichter nach Generator}
 
 %TODO Lars: Ausgesuchter Wechselrichter mit Kosten auflisten; Warum dieser Wechselrichter?
 
@@ -39,7 +39,7 @@ Zur Überwachung und auch zur Ansteuerung der Umlenkventile im Wartungsfall wird
 
 %TODO Lars: Ausgesuchter DC-DC Wandler mit Kosten auflisten; Warum dieser DC-DC Wandler(Kein Strom darf zurückfliessen!)?
 
-\paragraph{Wechselrichter}
+\paragraph{Wechselrichter für Netzeinspeisung} \label{par:WechselrichterNetz}
 
 %TODO Roni: Kosten einfügen; Kann die Leistung die Angezeigt wird auch auf einen PC übertragen werden? Kommunikationsschnittstelle? Unterster Abschnitt nochmals überarbeiten
 
@@ -62,17 +62,22 @@ Kosten: 3'401\si{Fr}
 
 \paragraph{Kontrollsystem}
 
-%TODO Lars: Kontrollsystem in Worte Fassen: 
+Das Kontrollsystem steuert und überwacht die Anlage und ist wie folgt aufgebaut: Auf einem PC ist eine C\# Software installiert. Das Programm kommuniziert über ModbusTPC mit der SPS und kann die Anlage so steuern. Über eine GUI kann ein Benutzer einfach auf die Anlage zugreifen, steuern und Informationen ablesen. Das Programm hat zwei verschiedene Modi. Einen Manuellen-Modus und einen Betriebs-Modus. Im Manuellen-Modus kann der Betrieb der Anlage für Wartungsarbeiten angepasst werden. So können die Ventile einzeln oder blockweise geschaltet werden. Im Betriebs-Modus werden nur im Störungsfall die Ventile automatisch geschalten um die Sicherheit zu gewährleisten. Wenn möglich werden nur einzelne Blöcke deaktiviert damit die Anlage weiterhin Strom produzieren kann. In beiden Modi wird die Stromgewinnung überwacht. So wird angezeigt welcher Generator gerade Strom erzeugt. Der Wechselrichter, der unter Wechselrichter für Netzeinspeisung beschrieben ist, kann über einem USB-Port eine serielle Kommunikation mit dem PC aufbauen. Das Programm kann die Informationen der aktuellen Energiegewinnung über diese Schnittstelle auslesen, speichert diese in einem Log. File und gibt diese an die Benutzeroberfläche weiter. Die gesammelten Daten können im Programm ausgewertet und grafisch dargestellt werden. Für dieses Kontrollsystem werden folgende Komponente benötigt.
 
-%SPS Beckhof besitzt: 
-%1 Kontrollerklemme BK9050 (200.-)
-%20 Digitale Ausgangsklemmen KL1114 (1 Klemme = 100.-)	;Für Ventile schalten
-%20 Digitale Eingangsklemmen KL2134 (1 Klemme = 100.-)	;Für überprüfen ob Ventile geschaltet ist
-%7 AnalogEingangsklemmen KL3162 (1 Klemme = 100.-)		;Strommessung über hochohmigen widerstand
-%1 Abschlussklemme KL9010 (50.-)
+\begin{table}[H]
+\begin{tabular}{lllll}
+\textbf{Anzahl}&\textbf {Komponente}&\textbf{Bezeichnung}&\textbf{Stückpreis [\si{Fr}]}&\textbf{Gesamtpreis [\si{Fr}]}\\
+\hline
+1&Kontrollklemme&BK9050&200&200\\
+20&Digitale Ausgangsklemme&KL1114&100&2000\\
+20&Digitale Eingangsklemme&KL2134&100&2000\\
+7& Analoge Eingangsklemme&KL2134&100&700\\
+1&PC&Dell&1000&1000\\
+\hline
+\end{tabular}
+\end{table}
 
-%IndustriePC suchen (Um die 1000.-)
-
+Die Kosten für die Komponenten betragen 5900 \si{Fr}. Für die Entwicklung der Software werden 3 PM benötigt und kostet einmalig 48\si{Fr}. 
 
 \newpage
 
