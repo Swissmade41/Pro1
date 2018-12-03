@@ -56,8 +56,9 @@ Gemäss Datenblatt lassen sich Ströme bis 200A regeln. Der Wechselrichter hat e
 Das Kontrollsystem steuert und überwacht die Anlage und ist wie folgt aufgebaut: Auf einem PC ist eine C\# Software installiert. Das Programm kommuniziert über ModbusTPC mit der SPS und kann die Anlage so steuern. Über eine GUI kann ein Benutzer einfach auf die Anlage zugreifen, steuern und Informationen ablesen. Das Programm hat zwei verschiedene Modi. Einen Manuellen-Modus und einen Betriebs-Modus. Im Manuellen-Modus kann der Betrieb der Anlage für Wartungsarbeiten angepasst werden. So können die Ventile einzeln oder blockweise geschaltet werden. Im Betriebs-Modus werden nur im Störungsfall die Ventile automatisch geschalten um die Sicherheit zu gewährleisten. Wenn möglich werden nur einzelne Blöcke deaktiviert damit die Anlage weiterhin Strom produzieren kann. In beiden Modi wird die Stromgewinnung überwacht. So wird angezeigt welcher Generator gerade Strom erzeugt. Der Wechselrichter, der unter Wechselrichter für Netzeinspeisung beschrieben ist, kann über einem USB-Port eine serielle Kommunikation mit dem PC aufbauen. Das Programm kann die Informationen der aktuellen Energiegewinnung über diese Schnittstelle auslesen, speichert diese in einem Log. File und gibt diese an die Benutzeroberfläche weiter. Die gesammelten Daten können im Programm ausgewertet und grafisch dargestellt werden. Für dieses Kontrollsystem werden folgende Komponente benötigt.
 
 \begin{table}[H]
+\small
 \begin{tabular}{lllll}
-\textbf{Anzahl}&\textbf {Komponente}&\textbf{Bezeichnung}&\textbf{Stückpreis [\si{Fr}]}&\textbf{Gesamtpreis [\si{Fr}]}\\
+\textbf{Anzahl}&\textbf {Komponente}&\textbf{Bezeichnung}&\textbf{Stückpreis [\si{CHF}]}&\textbf{Gesamtpreis [\si{CHF}]}\\
 \hline
 1&Kontrollklemme&BK9050&200&200\\
 20&Digitale Ausgangsklemme&KL1114&100&2000\\
