@@ -15,9 +15,9 @@ Das Konzept mit den Wasserliften ist am besten geeignet für unsere Anwendung. E
 
 Die potentielle Energie des Abwassers wird über ein Laufrad in kinetische Energie umgewandelt. Mit einem Getriebe wird die vom Laufrad kommende Drehzahl dem Generator angepasst, dieser wandelt die kinetische Energie in elektrische um. Der Gleichrichter transformiert den 3 Phasen Drehstrom in einen 2 poligen Gleichstrom. Anschliessend wird durch ein DC-DC Konverter eine Rückkoppelung auf den Genreator verhindert. Weiter stellt der Konverter sicher, dass eine stabile Ausgangsspannung anliegt und das der DC-Bus galvanisch vom Generator und Wechselrichter getrennt ist. Die summierte Energie aller sechs Generatorenstränge wird über einen Wechselrichter ins Stromnetz eingespeist. Zur Überwachung und auch zur Ansteuerung der Umlenkventile im Wartungsfall wird eine SPS verwendet.
 
-\paragraph{Generator}
-
-%TODO Lars: Tagesgangkurve beschreiben und dadurch mindestleitung Generator (3kW) begründen: (Tagesenergie 191.1MJ)
+\paragraph{Generator} \label{para:generator}
+Der Wasserverbrauch und somit die Abwasserproduktion im Hochhaus ist nicht über den ganzen Tag konstant. Für die Dimensionierung der Bauteile ist es aber nötig, den Spitzenwert der Abwasserproduktion zu kennen. Dieser kann aus Abbildung \ref{fig:tagesGangKurve} ausgelesen werden und liegt zwischen 7 und 8 Uhr morgens. Während dieser Stunde fliesst etwa 15\% des Abwassers ab, also müssen alle Komponenten auf diese Spitzenbelastung ausgelegt sein. 
+Der unterste Lift ist am längsten und befördert gleichzeitig die gesamte Abwassermenge. Es wurde berechnet, dass er pro Tag \(70.22 MJ\) potentielle Energie aufnimmt, mit einem Wirkungsgrad von 80\% des Liftes ergibt das 56.3 MJ, die der Generator umsetzten muss, \(15\%\) oder \(8.4 MJ\) dieser Energie zwischen 7 und 8 Uhr morgens. Der Generator muss also eine Mindestleitung von \(8.4 MJ / 3600 s = 2333 W \) aufweisen. Da die Abwassermenge auch während dieser Stunde nicht ganz konstant ist und zeitweise höher sein könne, sollte der Generator eine Mindestleitung von \(3 kW\) haben.
 
 \begin{figure}[H]
 \centering
@@ -26,15 +26,45 @@ Die potentielle Energie des Abwassers wird über ein Laufrad in kinetische Energ
 \label{fig:tagesGangKurve}
 \end{figure}
 
-%TODO Lars: Ausgesuchter Generator mit Kosten auflisten; Warum dieser Generator? Drehzahl beachten -> Zahnradsystem
+Aufgrund dieser Berechnungen haben wir uns für einen Eastern Lion STC-3 Dreiphasen Generator entschieden (Siehe Abbildung \ref{fig:Generator}).  
 
-\paragraph{Wechselrichter nach Generator}
+\begin{figure}[H]
+\centering
+\includegraphics[width=6cm]{Generator.jpg}
+\caption{Eastern Lion STC-3 \cite{generator}}
+\label{fig:Generator}
+\end{figure}
 
-%TODO Lars: Ausgesuchter Wechselrichter mit Kosten auflisten; Warum dieser Wechselrichter?
+Dieser Generator ist mit einem preis von 110\$ sehr günstig und erfüllt mit einer Leistung von 3 kW unsere Anforderungen.
+
+\textbf{Leistung:}		3KW \newline
+\textbf{Ausgang:}		3 Phasen 380V/120V \newline
+\textbf{Drehzahl:}		1500 bis 1800 U/min \newline
+\textbf{Wirkungsgrad:}	92\% \newline
+\textbf{Kosten:}		110\$ \newline
+
+\paragraph{Gleichrichter nach Generator}
+
+Die Dreiphasen Wechselspannung des Generators wird mit einem Gleichrichter in Gleichspannung umgewandelt. Wir haben uns dafür für einen SETEC SET4850 Gleichrichter entschieden (siehe Abbildung \ref{fig:Gleichrichter}). 
+
+%TODO ist eigentlich kein Gleichrichter...
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=6cm]{Gleichrichter.jpg}
+\caption{Setec SET4850 \cite{gleichrichter}}
+\label{fig:Gleichrichter}
+\end{figure}
+
+\textbf{Leistung:}		3KW \newline
+\textbf{Eingang:}		AC 3x 380V \newline
+\textbf{Ausgang:}		DC 48V/110V/220V \newline
+\textbf{Wirkungsgrad:}	97\% \newline
+\textbf{Kosten:}		300\$ \newline
+
 
 \paragraph{DC-DC Wandler}
-
-%TODO Lars: Ausgesuchter DC-DC Wandler mit Kosten auflisten; Warum dieser DC-DC Wandler(Kein Strom darf zurückfliessen!)?
+%TODO besprechen, ob wirklich nötig?
 
 \paragraph{Wechselrichter für Netzeinspeisung} \label{par:WechselrichterNetz}
 
@@ -102,7 +132,19 @@ Um diesen Wasserlift zu bauen beauftragen wir die Firma Schrage, ein führender 
 \newpage
 
 \paragraph{Zahnradsytem}
-%TODO Lars: Mindestdrehzahl dem Generator anpassen. Raddurchmesser für den Richtiungswechsel der rohrketten. Einen guten Wert annehmen
+Da der Generator eine viel höhere Drehzahl benötigt, als dass der Lift zur Verfügung stellt, muss ein Getriebe verwendet werden. Doch um dieses zu dimensionieren, muss man zuerst wissen, wie schnell sich der Wasserlift überhaupt bewegt. Dies ist abhängig von der Wassermenge und vom Rohrdurchmesser. Das Modellhochhaus hat 76 bewohnte Stockwerke mit je fünf Bewohnern, die durchschnittlich 314 Liter Wasser am Tag verbrauchen. Die Gesamtwassermenge beträgt also \(76 * 5 * 314 = 119320 l/24h\), die vollständig durch den untersten Wasserlift abfliesst. Anhand der Tagesgangkurve (Siehe Abbildung \ref{fig:tagesGangKurve}) kann man ablesen, dass 15\% des Abwassers zwischen 7 und 8 Uhr morgens abgelassen wird. Dies entspricht einer Abwassermenge von \(119320 * 0.15 = 17898 l\), etwa \(18 m^3 \), die innerhalb einer Stunde durch den untersten Wasserlift muss. Aus den Tabellen zu den Fördemengen von Schrage (Siehe Abbildung \ref{fig:foerdermengen}) kann man nun ablesen, bei welchem Rohrdurchmesser welche Geschwindigkeit nötig ist, um diese 18 Kubikmeter Abwasser zu befördern. 
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=12cm]{Foerdermengen.PNG}
+	\caption{Fördermengen \cite{schrage}}
+	\label{fig:foerdermengen}
+\end{figure}
+
+Um etwas Reserve zu haben, falls einmal eine grössere Abwasserspitze auftritt sollte das Rohr einen Durchmesser von mindestens \(160mm\) haben. Bei \(18 m^3 /h \) und einem Rohrdurchmesser von \(160mm\) hat die Förderkette also eine Geschwindigkeit von etwa \(0.3 m/s \). Bei diesem Rohrdurchmesser hat das Stösselkettenrad einen Durchmesser von etwa \(400mm\)\cite{schrage} und einen Umfang von \(400mm * \pi = 1257mm = 1.257m\). Somit hat das Stösselkettenrad eine Drehzahl von \(1.257m * 0.3 m/s * 60s = 22,6 U/min\). Aufgrund der kleinen Drehzahl, aber relativ grossen Leistung von maximal \(2300 W\) er Wasserlift hat einen relativ hohen Drehmoment von \( 2300 /(2 * \pi * 22.6/ 60) = 972 N/m\). Der Generator hat eine Maximale Drehzahl von \(1800 U/min\), braucht aber nur wenig relativ wenig Drehmoment. Das Getriebe muss also die Drehzahl des Liftes erhöhen, dabei ist das nötige Übersetzungsverhältnis etwa 1:80. 
+ 
+
+%TODO ???: Getriebe finden (speed multiplier gearbox) 
 
 \paragraph{Umleitventil}
 
