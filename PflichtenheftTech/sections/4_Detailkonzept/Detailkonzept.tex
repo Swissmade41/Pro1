@@ -43,13 +43,11 @@ Dieser Generator ist mit einem preis von 110\$ sehr günstig und erfüllt mit ei
 \textbf{Wirkungsgrad:}	92\% \newline
 \textbf{Kosten:}		110\$ \newline
 
-\paragraph{Gleichrichter nach Generator}
+\paragraph{Gleichrichtung nach Generator}
 
 %TODO Lars: Begründen warum dieser hersteller/gleichrichter besser ist als andere und ds DCDC schon integriert ist
 
-Die Dreiphasen Wechselspannung des Generators wird mit einem Gleichrichter in Gleichspannung umgewandelt. Wir haben uns dafür für einen SETEC SET4850 Gleichrichter entschieden (siehe Abbildung \ref{fig:Gleichrichter}). 
-
-
+Die Dreiphasige Wechselspannung des Generators wird mit einem Gleichrichter in Gleichspannung umgewandelt. Wir haben uns dafür für einen SETEC SET4850 Gleichrichter entschieden (siehe Abbildung \ref{fig:Gleichrichter}). Dieser besteht nicht nur aus einem Dreiphasen-Gleichrichter, sondern ist auch ein Netzteil, das unter anderem einen geregelten \(48Vdc\) Ausgang hat. Dieser Ausgang kann somit direkt über den DC Bus mit den Wechselrichtern der anderen Turbinen parallel geschaltet werden. Gesteuert und überwacht wird das Gerät über ein RS 485 Bus.
 
 \begin{figure}[H]
 \centering
@@ -58,18 +56,20 @@ Die Dreiphasen Wechselspannung des Generators wird mit einem Gleichrichter in Gl
 \label{fig:Gleichrichter}
 \end{figure}
 
-\textbf{Leistung:}		3KW \newline
-\textbf{Eingang:}		AC 3x 380V \newline
-\textbf{Ausgang:}		DC 48V/110V/220V \newline
-\textbf{Wirkungsgrad:}	97\% \newline
-\textbf{Kosten:}		300\$ \newline
+\textbf{Leistung:}		\(3 kW\) 			\newline
+\textbf{Eingang:}		AC \(3 * 380V\) 	\newline
+\textbf{Ausgang:}		DC 48V/110V/220V 	\newline
+\textbf{Genauigkeit:}	\(\pm 0.5 \%\)		\newline
+\textbf{Wirkungsgrad:}	\(96\%\) 			\newline
+\textbf{Steuerung:}		RS 485 				\newline
+\textbf{Kosten:}		300\$				\newline
 
 %http://www.farnell.com/datasheets/2333819.pdf?_ga=2.222713307.1750103157.1543910091-374399726.1543659672
 
 \paragraph{DC-DC Wandler}
+Ein DC-DC Bus Konverter ist nicht nötig, da der SET4850 schon einen geregelten, galvanisch getrennten Ausgang hat. Dieser kann direkt auf den DC Bus geführt werden.
 
-
-
+%TODO Paragraph entfernen?
 
 \paragraph{Wechselrichter für Netzeinspeisung} \label{par:WechselrichterNetz}
 
@@ -147,7 +147,15 @@ Da der Generator eine viel höhere Drehzahl benötigt, als dass der Lift zur Ver
 \end{figure}
 
 Um etwas Reserve zu haben, falls einmal eine grössere Abwasserspitze auftritt sollte das Rohr einen Durchmesser von mindestens \(160mm\) haben. Bei \(18 m^3 /h \) und einem Rohrdurchmesser von \(160mm\) hat die Förderkette also eine Geschwindigkeit von etwa \(0.3 m/s \). Bei diesem Rohrdurchmesser hat das Stösselkettenrad einen Durchmesser von etwa \(400mm\)\cite{schrage} und einen Umfang von \(400mm * \pi = 1257mm = 1.257m\). Somit hat das Stösselkettenrad eine Drehzahl von \(1.257m * 0.3 m/s * 60s = 22,6 U/min\). Aufgrund der kleinen Drehzahl, aber relativ grossen Leistung von maximal \(2300 W\) er Wasserlift hat einen relativ hohen Drehmoment von \( 2300 /(2 * \pi * 22.6/ 60) = 972 N/m\). Der Generator hat eine Maximale Drehzahl von \(1800 U/min\), braucht aber nur wenig relativ wenig Drehmoment. Das Getriebe muss also die Drehzahl des Liftes erhöhen, dabei ist das nötige Übersetzungsverhältnis etwa 1:80. 
- 
+\textbf{Anforderungen an das Getriebe:}				\newline
+\textbf{Übersetzungsverhältnis:}	1:80			\newline
+\textbf{Leistung:}					\(>=3 kW\)		\newline
+\textbf{Eingangsdrehzahl:}			\(22.6 U/min\)	\newline
+\textbf{Eingangsdrehmoment:}		\(>=1000 Nm\)§	\newline
+\textbf{Ausgangsdrehzahl:}			\(1800 U/min\)	\newline
+\textbf{Ausgangsdrehmoment:}		\(>= 20 Nm\)	\newline
+
+%TODO bin noch am Hersteller/Preis suchen.
 
 %TODO Lars: Anforderungen sind gegeben: Hersteller suchen und etwa Kosten schätzen (denke 5k etwa)
 \paragraph{Umleitventil}
