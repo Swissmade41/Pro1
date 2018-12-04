@@ -13,7 +13,7 @@ Das Konzept mit den Wasserliften ist am besten geeignet für unsere Anwendung. E
 
 \paragraph{Funktionsbeschreibung}
 
-Die potentielle Energie des Abwassers wird über ein Laufrad in kinetische Energie umgewandelt. Mit einem Getriebe wird die vom Laufrad kommende Drehzahl dem Generator angepasst, dieser wandelt die kinetische Energie in elektrische um. Der Gleichrichter transformiert den 3 Phasen Drehstrom in einen 2 poligen Gleichstrom. Anschliessend wird durch ein DC-DC Konverter eine Rückkoppelung auf den Genreator verhindert. Weiter stellt der Konverter sicher, dass eine stabile Ausgangsspannung anliegt und das der DC-Bus galvanisch vom Generator und Wechselrichter getrennt ist. Die summierte Energie aller sechs Generatorenstränge wird über einen Wechselrichter ins Stromnetz eingespeist. Zur Überwachung und auch zur Ansteuerung der Umlenkventile im Wartungsfall wird eine SPS verwendet.
+Die potentielle Energie des Abwassers wird über ein Laufrad in kinetische Energie umgewandelt. Mit einem Getriebe wird die vom Laufrad kommende Drehzahl dem Generator angepasst, dieser wandelt die kinetische Energie in elektrische um. Der Gleichrichter transformiert den 3 Phasen Drehstrom in einen 2 poligen Gleichstrom. Anschliessend wird durch ein DC-DC Konverter eine Rückkoppelung auf den Genreator verhindert. Weiter stellt der Konverter sicher, dass eine stabile Ausgangsspannung anliegt und das der DC-Bus galvanisch vom Generator und Wechselrichter getrennt ist. Die summierte Energie aller sechs Generatorenstränge wird über einen Wechselrichter ins Stromnetz eingespeist. Zur Überwachung und auch zur Ansteuerung der Umlenkventile wird eine SPS verwendet.
 
 \paragraph{Generator} \label{para:generator}
 Der Wasserverbrauch und somit die Abwasserproduktion im Hochhaus ist nicht über den ganzen Tag konstant. Für die Dimensionierung der Bauteile ist es aber nötig, den Spitzenwert der Abwasserproduktion zu kennen. Dieser kann aus Abbildung \ref{fig:tagesGangKurve} ausgelesen werden und liegt zwischen 7 und 8 Uhr morgens. Während dieser Stunde fliesst etwa 15\% des Abwassers ab, also müssen alle Komponenten auf diese Spitzenbelastung ausgelegt sein. 
@@ -45,9 +45,11 @@ Dieser Generator ist mit einem preis von 110\$ sehr günstig und erfüllt mit ei
 
 \paragraph{Gleichrichter nach Generator}
 
+%TODO Lars: Begründen warum dieser hersteller/gleichrichter besser ist als andere und ds DCDC schon integriert ist
+
 Die Dreiphasen Wechselspannung des Generators wird mit einem Gleichrichter in Gleichspannung umgewandelt. Wir haben uns dafür für einen SETEC SET4850 Gleichrichter entschieden (siehe Abbildung \ref{fig:Gleichrichter}). 
 
-%TODO ist eigentlich kein Gleichrichter...
+
 
 \begin{figure}[H]
 \centering
@@ -62,9 +64,12 @@ Die Dreiphasen Wechselspannung des Generators wird mit einem Gleichrichter in Gl
 \textbf{Wirkungsgrad:}	97\% \newline
 \textbf{Kosten:}		300\$ \newline
 
+%http://www.farnell.com/datasheets/2333819.pdf?_ga=2.222713307.1750103157.1543910091-374399726.1543659672
 
 \paragraph{DC-DC Wandler}
-%TODO besprechen, ob wirklich nötig?
+
+
+
 
 \paragraph{Wechselrichter für Netzeinspeisung} \label{par:WechselrichterNetz}
 
@@ -144,12 +149,11 @@ Da der Generator eine viel höhere Drehzahl benötigt, als dass der Lift zur Ver
 Um etwas Reserve zu haben, falls einmal eine grössere Abwasserspitze auftritt sollte das Rohr einen Durchmesser von mindestens \(160mm\) haben. Bei \(18 m^3 /h \) und einem Rohrdurchmesser von \(160mm\) hat die Förderkette also eine Geschwindigkeit von etwa \(0.3 m/s \). Bei diesem Rohrdurchmesser hat das Stösselkettenrad einen Durchmesser von etwa \(400mm\)\cite{schrage} und einen Umfang von \(400mm * \pi = 1257mm = 1.257m\). Somit hat das Stösselkettenrad eine Drehzahl von \(1.257m * 0.3 m/s * 60s = 22,6 U/min\). Aufgrund der kleinen Drehzahl, aber relativ grossen Leistung von maximal \(2300 W\) er Wasserlift hat einen relativ hohen Drehmoment von \( 2300 /(2 * \pi * 22.6/ 60) = 972 N/m\). Der Generator hat eine Maximale Drehzahl von \(1800 U/min\), braucht aber nur wenig relativ wenig Drehmoment. Das Getriebe muss also die Drehzahl des Liftes erhöhen, dabei ist das nötige Übersetzungsverhältnis etwa 1:80. 
  
 
-%TODO ???: Getriebe finden (speed multiplier gearbox) 
-
+%TODO Lars: Anforderungen sind gegeben: Hersteller suchen und etwa Kosten schätzen (denke 5k etwa)
 \paragraph{Umleitventil}
 
-%TODO Roni: Ventile aussuchen die das Wasser entweder in die Falleitung oder in das rohrketten rohr leitet
-% Genaues Ventil aussuchen. Anforderung 24V, Korrisionsbeständig
+%TODO Michel: Genaues Ventil aussuchen. Anforderung 24V, Korrisionsbeständig
+%Gibt es ein billigeres Ventil bei 74 Ventile und 2080 ist sind dies bisjetzt die grössten kosten
 
 Da bei Störungsfälle eine Fallleitung eingeplant haben, muss ein Umleitungsventil installiert werden. Das Model F7125 3-Way Butterfly Valve ist optimal für diese Bedingung geeignet. Das zugehörige Steuerungsmodel PRBUP-3-T kann von einer Spannung von zwischen 24V-230V angesteuert werden, somit können wir es im SPS System integrieren. Der Umleitungsventil hat ein gesamt Gewicht von 51\si{kg} und für das ganze system kommt man auf die Kosten von 2082\si{Fr}.
 
@@ -163,4 +167,4 @@ Da bei Störungsfälle eine Fallleitung eingeplant haben, muss ein Umleitungsven
 \cite{Belimo}
 \subsection{Kosten}
 
-%TODO Sonntag: Alle Kosten zusammentragen
+%TODO Frank: Alle Kosten zusammentragen
