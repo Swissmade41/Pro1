@@ -6,16 +6,17 @@ Das Konzept mit den Wasserliften ist am besten geeignet für unsere Anwendung. E
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{Skizze_GK4.png}
+\includegraphics[width=14cm]{Skizze_GK4.png}
 \caption{Prinzipschema}
 \label{fig:Prinzipschema}
 \end{figure}
 
-\paragraph{Funktionsbeschreibung}
-
 Die potentielle Energie des Abwassers wird über ein Laufrad in kinetische Energie umgewandelt. Mit einem Getriebe wird die vom Laufrad kommende Drehzahl dem Generator angepasst, welcher die kinetische Energie in elektrische umwandelt. Der Gleichrichter transformiert den Dreiphasenwechselstrom in einen zweipoligen Gleichstrom. Anschliessend wird durch ein DC-DC Konverter eine Rückkoppelung auf den Genreator verhindert. Weiter stellt der Konverter sicher, dass eine stabile Ausgangsspannung anliegt und der DC-Bus galvanisch von Generator und Wechselrichter getrennt ist. Die summierte Energie aller sechs Generatorenstränge wird über einen Wechselrichter ins Stromnetz eingespeist. Zur Überwachung und auch zur Ansteuerung der Umlenkventile wird eine SPS verwendet.
 
+\bigskip
+
 \paragraph{Generator} \label{para:generator}
+
 Der Wasserverbrauch und somit die Abwasserproduktion im Hochhaus ist nicht über den ganzen Tag konstant. Für die Dimensionierung der Bauteile ist es aber wichtig, den Spitzenwert der Abwasserproduktion zu kennen. Dieser kann aus Abbildung \ref{fig:tagesGangKurve} ausgelesen werden und liegt zwischen 7 und 8 Uhr morgens. Während dieser Stunde fliesst etwa 15\% des Abwassers ab, also müssen alle Komponenten auf diese Spitzenbelastung ausgelegt sein. 
 Der unterste Lift ist am längsten und befördert gleichzeitig die gesamte Abwassermenge. Es wurde berechnet, dass er pro Tag \(70.22 MJ\) potentielle Energie aufnimmt. Mit einem Wirkungsgrad von 80\% des Liftes ergibt das 56.3 MJ, die der Generator umsetzten muss, \(15\%\) oder \(8.4 MJ\) dieser Energie zwischen 7 und 8 Uhr morgens. Der Generator muss also eine Mindestleitung von \(8.4 MJ / 3600 s = 2333 W \) aufweisen. Da die Abwassermenge auch während dieser Stunde nicht ganz konstant ist und zeitweise höher sein könnte, sollte der Generator eine Mindestleitung von \(3 kW\) haben.
 
@@ -44,8 +45,6 @@ Dieser Generator ist mit einem Preis von 110\$ sehr günstig und erfüllt mit ei
 \textbf{Kosten:}		110\$ \newline
 
 \paragraph{Gleichrichtung nach Generator}
-
-%TODO Lars: Begründen warum dieser hersteller/gleichrichter besser ist als andere und ds DCDC schon integriert ist
 
 Die dreiphasige Wechselspannung des Generators wird mit einem Gleichrichter in Gleichspannung umgewandelt. Wir haben uns für einen SETEC SET4850 Gleichrichter entschieden (siehe Abbildung \ref{fig:Gleichrichter}). Dieser besteht nicht nur aus einem Dreiphasen-Gleichrichter, sondern ist auch ein Netzteil, das unter anderem einen geregelten \(48Vdc\) Ausgang hat. Dieser Ausgang kann somit direkt über den DC Bus mit den Wechselrichtern der anderen Turbinen parallel geschaltet werden. Gesteuert und überwacht wird das Gerät über einen RS 485 Bus.
 
@@ -85,10 +84,25 @@ Das Modell Hybrid Wechselrichter HSI10000 entspricht den gewünschten Anforderun
 
 Gemäss Datenblatt lassen sich Ströme bis 200A regeln. Der Wechselrichter hat einen netzunabhängigen Energiespeicher (Batterie-Backup). Um die Daten des Wechselrichters weiterzuleiten stehen verschieden Kommunikationsmittel zur Verfügung. Die Informationen können über einen USB Port, RS-232 oder den SNMP (Simple Network Management Protocol) Überwachungssoftware für Echtzeitstatusanzeige und -steuerung übermittelt werden. Die Kosten des Wechselrichters belaufen sich auf 3'401\si{Fr}.
 
+\newpage
+
 
 \paragraph{Kontrollsystem}
 
-Das Kontrollsystem steuert und überwacht die Anlage und ist wie folgt aufgebaut: Auf einem PC ist eine C\# Software installiert. Das Programm kommuniziert über ModbusTPC mit der SPS und kann die Anlage so steuern. Über eine grafische Oberfläche kann ein Benutzer einfach auf die Anlage zugreifen, steuern und Informationen ablesen. Das Programm hat zwei verschiedene Modi. Einen manuellen Modus und einen Betriebsmodus. Im manuellen Modus kann der Betrieb der Anlage für Wartungsarbeiten angepasst werden. So können die Ventile einzeln oder blockweise geschaltet werden. Im Betriebsmodus werden nur im Störungsfall die Ventile automatisch geschalten, um die Sicherheit zu gewährleisten. Wenn möglich werden nur einzelne Blöcke deaktiviert, damit die Anlage weiterhin Strom produzieren kann. In beiden Modi wird die Stromgewinnung überwacht. So wird angezeigt, welcher Generator gerade wie viel Strom erzeugt. Der Wechselrichter, der unter Wechselrichter für Netzeinspeisung beschrieben ist, kann über einem USB-Port eine serielle Kommunikation mit dem PC aufbauen. Das Programm kann die Informationen der aktuellen Energiegewinnung über diese Schnittstelle auslesen, speichert diese in einem Log. File und gibt diese an die Benutzeroberfläche weiter. Die gesammelten Daten können im Programm ausgewertet und grafisch dargestellt werden. Für dieses Kontrollsystem werden folgende Komponenten benötigt.
+Das Kontrollsystem steuert und überwacht die Anlage und ist wie folgt aufgebaut: Auf einem PC ist eine C\# Software installiert. Das Programm kommuniziert über ModbusTPC mit der SPS und kann die Anlage so steuern. In der Abbildung \ref{fig:beckhoff} \nameref{fig:beckhoff} ist die SPS von Beckhoff ersichtlich.
+
+\bigskip
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=10cm]{Beckhoff.jpg}
+	\caption{SPS von Beckhoff \cite{beckhoff}}
+	\label{fig:beckhoff}
+\end{figure}
+
+In der Software kann über eine grafische Oberfläche ein Benutzer einfach auf die Anlage zugreifen, steuern und Informationen ablesen. Das Programm hat zwei verschiedene Modi. Einen manuellen Modus und einen Betriebsmodus. Im manuellen Modus kann der Betrieb der Anlage für Wartungsarbeiten angepasst werden. So können die Ventile einzeln oder blockweise geschaltet werden. Im Betriebsmodus werden nur im Störungsfall die Ventile automatisch geschalten, um die Sicherheit zu gewährleisten. Wenn möglich werden nur einzelne Blöcke deaktiviert, damit die Anlage weiterhin Strom produzieren kann. In beiden Modi wird die Stromgewinnung überwacht. So wird angezeigt, welcher Generator gerade wie viel Strom erzeugt. Der Wechselrichter, der unter Wechselrichter für Netzeinspeisung beschrieben ist, kann über einem USB-Port eine serielle Kommunikation mit dem PC aufbauen. Das Programm kann die Informationen der aktuellen Energiegewinnung über diese Schnittstelle auslesen, speichert diese in einem Log. File und gibt diese an die Benutzeroberfläche weiter. Die gesammelten Daten können im Programm ausgewertet und grafisch dargestellt werden. Für dieses Kontrollsystem werden folgende Komponenten benötigt.
+
+\bigskip
 
 \begin{table}[H]
 \small
@@ -104,7 +118,11 @@ Das Kontrollsystem steuert und überwacht die Anlage und ist wie folgt aufgebaut
 \end{tabular}
 \end{table}
 
-Die Kosten für die Komponenten betragen 5900 \si{Fr}. Für die Entwicklung der Software werden 3 PM benötigt, was einmalig 48'000\si{Fr} kostet. 
+\bigskip
+
+Die Kosten für die Komponenten betragen 5900 \si{Fr} \cite{beckhoff}. Für die Entwicklung der Software werden 3 PM benötigt, was einmalig 48'000\si{Fr} kostet. 
+
+
 
 \newpage
 
@@ -157,11 +175,7 @@ Um etwas Reserve zu haben, falls einmal eine grössere Abwasserspitze auftritt, 
 
 %TODO bin noch am Hersteller/Preis suchen.
 
-%TODO Lars: Anforderungen sind gegeben: Hersteller suchen und etwa Kosten schätzen (denke 5k etwa)
 \paragraph{Umleitventil}
-
-%TODO Michel: Genaues Ventil aussuchen. Anforderung 24V, Korrisionsbeständig
-%Gibt es ein billigeres Ventil bei 74 Ventile und 2080 ist sind dies bisjetzt die grössten kosten
 
 Da wir für Störungsfälle eine Fallleitung eingeplant haben, muss ein Umleitungsventil installiert werden. Das Modell F7125 3-Way Butterfly Valve ist optimal für diese Bedingung geeignet. Das zugehörige Steuerungsmodell PRBUP-3-T kann von einer Spannung zwischen 24V-230V angesteuert werden. Somit können wir es im SPS System integrieren. Das Umleitungsventil hat ein Gesamtgewicht von 51\si{kg}. Für das ganze System kommt man auf Kosten von 2082\si{Fr}.
 
@@ -173,6 +187,9 @@ Da wir für Störungsfälle eine Fallleitung eingeplant haben, muss ein Umleitun
 
 
 \cite{Belimo}
+
+
+
 \subsection{Kosten}
 
 %TODO Frank: Alle Kosten zusammentragen
