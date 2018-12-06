@@ -37,12 +37,23 @@ Aufgrund dieser Berechnungen haben wir uns für einen Eastern Lion STC-3 Dreipha
 \end{figure}
 
 Dieser Generator ist mit einem Preis von 110\$ sehr günstig und erfüllt mit einer Leistung von 3 kW unsere Anforderungen.
+\begin{table}[H]
+\small
+\begin{center}
+\begin{tabular}{ll}
+\hline
+\textbf{Anforderung}&\textbf{Wert}\\
+\hline
+Leistung&\(3kW\)\\
+Ausgang&	3 Phasen \(380V/120V\)\\
+Drehzahl&1500 bis \(1800 U/min\)\\
+Wirkungsgrad&92\%\\
+Kosten&110CHF\\
+\end{tabular}
+\caption{Anforderungen an den Generator}
+\end{center}
+\end{table}
 
-\textbf{Leistung:}		3KW \newline
-\textbf{Ausgang:}		3 Phasen 380V/120V \newline
-\textbf{Drehzahl:}		1500 bis 1800 U/min \newline
-\textbf{Wirkungsgrad:}	92\% \newline
-\textbf{Kosten:}		110\$ \newline
 
 \paragraph{Gleichrichtung nach Generator}
 
@@ -55,13 +66,26 @@ Die dreiphasige Wechselspannung des Generators wird mit einem Gleichrichter in G
 \label{fig:Gleichrichter}
 \end{figure}
 
-\textbf{Leistung:}		\(3 kW\) 			\newline
-\textbf{Eingang:}		AC \(3 * 380V\) 	\newline
-\textbf{Ausgang:}		DC 48V/110V/220V 	\newline
-\textbf{Genauigkeit:}	\(\pm 0.5 \%\)		\newline
-\textbf{Wirkungsgrad:}	\(96\%\) 			\newline
-\textbf{Steuerung:}		RS 485 				\newline
-\textbf{Kosten:}		300\$				\newline
+\begin{table}[H]
+\small
+\begin{center}
+\begin{tabular}{ll}
+\hline
+\textbf{Anforderung}&\textbf{Wert}\\
+\hline
+Leistung&\(3 kW\)\\
+Eingang&AC \(3 * 380V\)\\
+Ausgang&DC \(48V/110V/220V\)\\
+Genauigkeit&\(\pm 0.5 \%\)\\
+Wirkungsgrad&\(96\%\)\\
+Steuerung&RS 485\\
+Kosten&300CHF\\
+\hline
+\end{tabular}
+\caption{Anforderungen an den Gleichrichter}
+\end{center}
+\end{table}
+
 
 %http://www.farnell.com/datasheets/2333819.pdf?_ga=2.222713307.1750103157.1543910091-374399726.1543659672
 
@@ -69,9 +93,21 @@ Die dreiphasige Wechselspannung des Generators wird mit einem Gleichrichter in G
 
 Damit die gewonnen Leistung in das Netz eingespiesen werden kann, muss der Wechselrichter folgende Eigenschaften aufweisen. 
 
-\textbf{Leistung:}		9KW \newline
-\textbf{Ausgang:}		3Phasen \newline
-\textbf{Kosten:}		Die Kosten sollen möglichst gering gehalten werden. \newline
+\begin{table}[H]
+\small
+\begin{center}
+\begin{tabular}{ll}
+\hline
+\textbf{Anforderung}&\textbf{Wert}\\
+\hline
+Leistung&\(9 kW\)\\
+Ausgang&3 Phasen\\
+Kosten&<4000CHF\\
+\hline
+\end{tabular}
+\caption{Anforderungen an den Wechselrichter}
+\end{center}
+\end{table}
 
 In der Förderungsanlage wird ein Asynchrongenerator verbaut. Die Firma Voltacon ist bekannt für ihre Hochleistungswechselrichter.
 
@@ -109,7 +145,7 @@ In der Software kann über eine grafische Oberfläche ein Benutzer einfach auf d
 
 \begin{table}[H]
 \small
-\begin{tabular}{lllll}
+\begin{tabular}{lllrr}
 \hline
 \textbf{Anzahl}&\textbf {Komponente}&\textbf{Bezeichnung}&\textbf{Stückpreis [\si{CHF}]}&\textbf{Gesamtpreis [\si{CHF}]}\\
 \hline
@@ -120,6 +156,7 @@ In der Software kann über eine grafische Oberfläche ein Benutzer einfach auf d
 1&PC&Dell&1000&1000\\
 \hline
 \end{tabular}
+\caption{Kostentabelle für Kontrollsystem}
 \end{table}
 
 \bigskip
@@ -170,7 +207,6 @@ Da der Generator eine viel höhere Drehzahl benötigt, als dass der Lift zur Ver
 
 Um etwas Reserve zu haben, falls einmal eine grössere Abwasserspitze auftritt, sollte das Rohr einen Durchmesser von mindestens \(160mm\) haben. Bei \(18 m^3 /h \) und einem Rohrdurchmesser von \(160mm\) hat die Förderkette also eine Geschwindigkeit von etwa \(0.3 m/s \). Bei diesem Rohrdurchmesser hat das Stösselkettenrad einen Durchmesser von etwa \(400mm\)\cite{schrage} und einen Umfang von \(400mm * \pi = 1257mm = 1.257m\). Somit hat das Stösselkettenrad eine Drehzahl von \(1.257m * 0.3 m/s * 60s = 22,6 U/min\). Aufgrund der kleinen Drehzahl aber relativ grossen Leistung von maximal \(2300 W\) hat der Wasserlift ein relativ hohes Drehmoment von \( 2300 /(2 * \pi * 22.6/ 60) = 972 N/m\). Der Generator hat eine maximale Drehzahl von \(1800 U/min\), braucht aber nur wenig Drehmoment. Das Getriebe muss also die Drehzahl des Liftes erhöhen, dabei ist das nötige Übersetzungsverhältnis etwa 1:80. 
 \begin{table}
-\caption{Anforderungen an das Getriebe}
 \small
 \begin{center}
 \begin{tabular}{ll}
@@ -185,13 +221,14 @@ Ausgangsdrehzahl&\(1800 U/min\)\\
 Ausgangsdrehmoment&$\geq$\(20 Nm\)\\
 \hline
 \end{tabular}
+\caption{Anforderungen an das Getriebe}
 \end{center}
 \end{table}
 Es wurden Anfragen an mehrere mögliche Hersteller gesendet, allerdings bislang ohne Antwort. Wir schätzen den Preis pro Getriebe auf 1000.- Franken, also insgesamt ~6000.- Franken.
 
 \paragraph{Umleitventil}
 
-Da wir für Störungsfälle eine Fallleitung eingeplant haben, muss in jeder Etage ein Umleitungsventil installiert werden. Das Modell 167 PVC-U von GF Piping Systems, das in der Grafik \ref{fig:Umleitungsventil} zu sehen ist, ist optimal für diese Bedingung geeignet. Die integrierte Steuerung kann von einer Spannung von 24V angesteuert werden. Somit können wir es im SPS System integrieren. Pro Umleitventil rechnen wir mit 100 CHF.
+Da wir für Störungsfälle eine Fallleitung eingeplant haben, muss in jeder Etage ein Umleitungsventil installiert werden. Das Modell 167 PVC-U von GF Piping Systems, das in der Grafik \ref{fig:Umleitungsventil} zu sehen ist, ist optimal für diese Bedingung geeignet. Die integrierte Steuerung kann von einer Spannung von 24V angesteuert werden. Somit können wir es im SPS System integrieren. Pro Umleitventil rechnen wir mit 100CHF.
 
  \begin{figure} [H]
 	\centering
