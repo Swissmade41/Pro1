@@ -169,14 +169,24 @@ Da der Generator eine viel höhere Drehzahl benötigt, als dass der Lift zur Ver
 \end{figure}
 
 Um etwas Reserve zu haben, falls einmal eine grössere Abwasserspitze auftritt, sollte das Rohr einen Durchmesser von mindestens \(160mm\) haben. Bei \(18 m^3 /h \) und einem Rohrdurchmesser von \(160mm\) hat die Förderkette also eine Geschwindigkeit von etwa \(0.3 m/s \). Bei diesem Rohrdurchmesser hat das Stösselkettenrad einen Durchmesser von etwa \(400mm\)\cite{schrage} und einen Umfang von \(400mm * \pi = 1257mm = 1.257m\). Somit hat das Stösselkettenrad eine Drehzahl von \(1.257m * 0.3 m/s * 60s = 22,6 U/min\). Aufgrund der kleinen Drehzahl aber relativ grossen Leistung von maximal \(2300 W\) hat der Wasserlift ein relativ hohes Drehmoment von \( 2300 /(2 * \pi * 22.6/ 60) = 972 N/m\). Der Generator hat eine maximale Drehzahl von \(1800 U/min\), braucht aber nur wenig Drehmoment. Das Getriebe muss also die Drehzahl des Liftes erhöhen, dabei ist das nötige Übersetzungsverhältnis etwa 1:80. 
-\textbf{Anforderungen an das Getriebe:}				\newline
-\textbf{Übersetzungsverhältnis:}	1:80			\newline
-\textbf{Leistung:}					\(>=3 kW\)		\newline
-\textbf{Eingangsdrehzahl:}			\(22.6 U/min\)	\newline
-\textbf{Eingangsdrehmoment:}		\(>=1000 Nm\)	\newline
-\textbf{Ausgangsdrehzahl:}			\(1800 U/min\)	\newline
-\textbf{Ausgangsdrehmoment:}		\(>= 20 Nm\)	\newline
-
+\begin{table}
+\caption{Anforderungen an das Getriebe}
+\small
+\begin{center}
+\begin{tabular}{ll}
+\hline
+\textbf{Anforderung}&\textbf{Wert}\\
+\hline			
+Übersetzungsverhältnis&1:80\\
+Leistung&$\geq$\(3 kW\)\\		
+Eingangsdrehzahl&\(22.6 U/min\)\\
+Eingangsdrehmoment&$\geq$\(1000 Nm\)\\	
+Ausgangsdrehzahl&\(1800 U/min\)\\
+Ausgangsdrehmoment&$\geq$\(20 Nm\)\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
 Es wurden Anfragen an mehrere mögliche Hersteller gesendet, allerdings bislang ohne Antwort. Wir schätzen den Preis pro Getriebe auf 1000.- Franken, also insgesamt ~6000.- Franken.
 
 \paragraph{Umleitventil}
@@ -189,12 +199,5 @@ Da wir für Störungsfälle eine Fallleitung eingeplant haben, muss in jeder Eta
 	\caption{Ventil \cite{GFPipeVentil}}%TODO MICHEL link in bibtex einfuegen https://www.gfps.com/appgate/ecat/common_flow/10006F/CH/de/109564/721624/721636/P420683/product.html
 	\label{fig:Umleitungsventil}
 \end{figure}
-
-
-\cite{Belimo}
-
-
-
-\subsection{Kosten}
 
 %TODO Frank: Alle Kosten zusammentragen
