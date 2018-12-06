@@ -76,6 +76,12 @@
   url    = {https://www.alibaba.com/product-detail/SET4850-AC-DC-rectifier_60351527841.html},
 }
 
+@Online{beckhoff,
+  author = {Beckhoff},
+  date   = {2018-12-05},
+  url    = {https://www.beckhoff.de},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
 
 % Encoding: UTF-8
