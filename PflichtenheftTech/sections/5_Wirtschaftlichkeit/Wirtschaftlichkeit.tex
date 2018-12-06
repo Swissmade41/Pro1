@@ -6,20 +6,20 @@ Für die vereinfachung der Amortisationsrechnung wurden folgende Annahmen getrof
 \begin{itemize}  
 \item Das Hochhaus wird neu gebaut, deshalb entstehen keine Umbaukosten.
 \item Als Investitionskosten zählen wir die Einbaukosten der zusätzlichen Infrastruktur, die Materialkosten und die Entwicklungskosten.
-\item Pro Jahr entsteht ein Serviceaufwand in der Höhe von schätzungsweise 3000 CHF.
-\item Die Einbaukosten der zusätzlichen Infrastruktur betragen etwa 10000 CHF.
+\item Pro Jahr entsteht ein Service- und Reperaturaufwand in der Höhe von schätzungsweise 1'000 CHF.
+\item Die Einbaukosten der zusätzlichen Infrastruktur betragen etwa 10'000 CHF.
+\item Das System hat eine Lebensdauer von 50 Jahren.
 \end{itemize}
 
 \renewcommand\arraystretch{1.2}
 \newcolumntype{Z}[1]{>{\HY\RaggedLeft\bfseries}p{#1}}
-\subsection{Amortisationszeit}
-Amortsierungszeit = Investitionskosten (Einbaukosten plus Materialkosten plus Entwicklungskosten) geteilt durch (jährlicher Rückfluss = (Stromgewinn minus Serviceaufwand)\\
+\subsection{Kosten}
 \begin{table}[H]
 \small
-\begin{tabular}{L{4cm}R{1.5cm}R{4cm}R{2cm}Z{2cm}}
+\begin{tabular}{L{4cm}R{1.5cm}rR{2cm}Z{2cm}}
 %\multicolumn{4}{l}{\textbf{Investitionskosten}}\\
 \hline
-Kostenkategorie&Anzahl&Preis[CHF]/Element&Preis[CHF]&\\
+\textbf{Kostenkategorie}&\textbf{Anzahl}&\textbf{Preis[CHF]/Element}&\textbf{Preis[CHF]}&\\
 \hline
 \rowcolor{hellgrau}
 \multicolumn{4}{l}{\textbf{Einbaukosten}}&10'000\T\\
@@ -48,3 +48,15 @@ Software&1&48'000&48'000\B\\
 \end{tabular}
 \caption{Kostentabelle}\label{tab:kostentabelle}
 \end{table}
+\newpage
+\subsection{Amortisationszeit}
+Mit der Formel $A = \tfrac{K}{R}$ wird nun die Amortisationszeit (A) berechnet, wobei K die einmaligen Investitionskosten sind, die man aus der Tabelle \ref{tab:kostentabelle} entnehmen kann. R ist der jährliche Rückfluss, also in unserem Fall der Ertrag aus dem Stromgewinn abzüglich des Service- und Reperaturaufwands.\\
+
+\bigskip
+K = 146'160 CHF
+
+\bigskip
+R = 365$\tfrac{T}{J}\cdot$10.62$\tfrac{CHF}{T}$ - 1'000$\tfrac{CHF}{J}$ = 2'876$\tfrac{CHF}{J}$
+
+\bigskip
+$A = \tfrac{146'160CHF}{2'876 \tfrac{CHF}{J}} =$ 50.82$J$
