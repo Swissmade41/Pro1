@@ -1,0 +1,62 @@
+\subsection{Grobkonzept 3} \label{subsec:grobkonzept3}
+\begin{table}[H]
+\small
+\begin{tabular}{>{\HY\RaggedRight}p{3cm} >{\HY\RaggedRight}p{3.6cm} >{\HY\RaggedRight}p{6.9cm} r}
+\hline
+\textbf{Bestandteil}&\textbf{Typ}&\textbf{Funktion}&\textbf{Anz.}\\
+\hline
+
+\rowcolor{hellgrau}
+\multicolumn{4}{l}{\textbf{Stromerzeugung}}\T\\
+Turbine&Pelton&Umwandlung in Rotationsenergie&5\\
+Generator&AC&Umwandlung in elektrische Energie&5\\
+Gleichrichter&AC/DC Wandler&Wechselstrom zu Gleichstrom&5\\
+DC/DC Konverter&&Regelt die Spannung für den DC Bus&5\\
+Wechselrichter&&Umwandlung DC in AC (230V)&1\B\\
+
+\rowcolor{hellgrau}
+\multicolumn{4}{l}{\textbf{Kontrollsystem}}\T\\
+PC&&Anlagesteuerung&1\\
+SPS&Beckhof&Analoge und Digitale Ein- und Ausgänge&1\B\\
+
+\rowcolor{hellgrau}
+\multicolumn{4}{l}{\textbf{Abwassertechnik}}\T\\
+Tanks&&Zwischenspeicher für Abwasser&5\\
+Ablassventil&&Entlässt das Abwasser aus dem Tank&5\\
+Entlüftung&&ermöglicht Luftaustausch, entlässt Gase&5\\
+Notüberlauf&&Verhindert, dass Tank zu voll wird&5\\
+Füllstandsensor&Vibronik Grenzschalter&Misst den Füllstand des Tanks&5\\
+Druckleitungen&&Können Druck standhalten&5\\
+Bypass für Turbine&&ermöglicht Wartung der Turbine&5\\
+Bypass für Tanks&&ermöglicht Wartung \& Reingung der Tanks&5\B\\ 
+\hline
+\end{tabular}
+\caption{Bestandteilliste Grobkonzept 3}\label{tab:BLGrobkonzept3}
+\end{table}
+Dieses Grobkonzept ist fast identisch zu Grobkonzept 2. Es gibt wieder mehrere Tanks in einem Abstand von 14 Stockwerken, in denen das Abwasser zwischengespeichert wird. Allerdings gibt es nicht nur eine, sondern gleich viele Turbinen wie Tanks. Das Abwasser fliesst von einem Tank 14 Stockwerke nach unten, durch eine Turbine und dann in den nächsten Tank. Bei Grobkonzept 2 kann es unter Umständen relativ lange dauern, bis die Rohre komplett mit Wasser gefüllt sind. Bis das der Fall ist, kommt es zu Luftwiderstand in der Leitung, der das Abwasser abbremst. Bei jedem Tank eine Turbine einzubauen hat den Vorteil, dass die Rohre kürzer sind und so nach öffnen des Ventils schneller komplett mit Wasser gefüllt werden. So wird die Zeit verkürzt, in der Luftwiderstand auftritt. Ausserdem ist der Druck in den Leitungen geringer, man kann also günstigere Rohre und Ventile verwenden. Da im Vergleich zu Grobkonzept 2 keinen Rückstau geben kann, ist es nicht nötig, Einwegventile in die Druckleitung einzubauen. 
+Damit der Strom der Turbinen zusammengeführt werden kann, muss der Wechselstrom zuerst in Gleichstrom umgewandelt werden. Dieser wird auf einen DC-DC Konverter gelegt damit kein Strom zurück in den Generator fliessen kann.
+\newpage
+\begin{wrapfigure}{r}{0.5\textwidth}
+  \begin{center}
+    \includegraphics[width=0.48\textwidth]{grobkonzept3}
+  \end{center}
+  \caption{Schema Grobkonzept 3}
+\end{wrapfigure}
+
+Anschliessend wird der Gleichstrom mit einem Wechselrichter auf Netz-Spannung umgewandelt.
+
+Ein Kontrollsystem steuert die Anlage und überwacht die Energiegewinnung und schreitet bei Störungen ein.
+
+\textbf{Vorteile:} 									\newline
++	Luftwiderstand nur während Füllung				\newline
++	kurze Druckleitungen								\newline
++	geregelte Wasserflussmenge						\newline
+
+\textbf{Nachteile:}									\newline
+-	Braucht viel Platz								\newline
+-	grössere bauliche Massnahmen						\newline
+-	Mehrere Turbinen									\newline
+-	AC-DC-AC Umwandlung								\newline
+-	Abwasser der untersten 17 Stockwerke ungenutzt	\newline
+\WFclear			
+\newpage

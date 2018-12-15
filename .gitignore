@@ -1,0 +1,15 @@
+
+PflichtenheftTech/Ext_files/.DS_Store
+PflichtenheftTech/.DS_Store
+PflichtenheftTech/sections/.DS_Store
+PflichtenheftTech/graphics/.DS_Store
+PflichtenheftTech/sections/1_Uebersicht/Uebersicht.aux
+PflichtenheftTech/sections/3_Auswertung/Auswertung.aux
+PflichtenheftTech/sections/2_Loesungskonzept/Loesungskonzept.aux
+*.aux
+*.log
+*.out
+*.bcf
+*.xml
+*.gz
+*.toc

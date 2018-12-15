@@ -1,0 +1,83 @@
+\subsection{Nutzwertanalyse} \label{subsec:nutzwertanlyse}
+\renewcommand{\arraystretch}{1.5}
+\newcommand{\vtcl}[1]{\rotatebox{90}{#1}}%\newcommand{\vtcl}[1]{\rotatebox{90}{\textbf{#1}}}
+%\newcommand{\diagL}[1]{\diagbox{\hspace{#1}}{\hspace{#1}}}
+Das Team konnte durch folgende Nutzwertanalyse bestimmen, dass das Grobkonzept 4 am ehesten in Fage kommt.
+%\begin{table}[H]
+%\small
+%\begin{tabular}{l|llll|rr}
+%&\vtcl{1.1. Wirkungsgrad}&\vtcl{1.2. Leistung}&\vtcl{1.3. Komplexität}&\vtcl{2.1. Platzbedarf}&\vtcl{Total}&\vtcl{Prozent}\\%\vtcl{2.1. Verstopfungsgefahr}&\vtcl{2.2. Platzbedarf}&\vtcl{2.3. Wartung}&\vtcl{Total}&\vtcl{Prozent}\\
+%\hline
+%1.1. Wirkungsgrad		&\cellcolor{black}	&0.5					&0.5					&0.5					&2.		&13\%\\
+%1.2. Leistung			&0.5					&\cellcolor{black}	&1					&1					&4.5		&30\%\\
+%1.3. Komplexität			&0.5					&0					&\cellcolor{black}	&0					&1.0		&6.5\%\\
+%2.1. Verstopfungsgefahr	&1					&0					&1					&\cellcolor{black}	&0					&1					&3		&20\%\\
+%2.1. Platzbedarf			&0.5					&0					&1					&\cellcolor{black}	&3.5		&24\%\\
+%2.3. Wartung			&0.5					&0					&0.5					&0					&0					&\cellcolor{black}	&1.0		&6.5\%\\
+%\hline
+%\multicolumn{7}{c}{}&\textbf{15}&\textbf{100}\%\\
+%\end{tabular}
+%\end{table}
+%\begin{scriptsize}
+%Zeile-Kriterium ist wichtiger als Spalten-Kriterium 1\\
+%Zeile-Kriterium ist gleich wichtig wie Spalten-Kriteriium 0.5\\
+%Zeile-Kriterum ist weniger wichtig wie Spalternkriterium 0\\
+%\end{scriptsize}
+\newcolumntype{C}[1]{>{\centering}p{#1}}
+
+
+\renewcommand\arraystretch{1.5}
+\newcolumntype{R}[1]{>{\HY\RaggedLeft}p{#1}}
+\newcolumntype{L}[1]{>{\HY\RaggedRight}p{#1}}
+\renewcommand{\vtcl}[1]{\rotatebox{90}{\textbf{#1}}}
+\begin{table}[H]
+\small
+\rotatebox{90}{
+%|R{1.2cm}R{0.4cm}R{0.8cm} \scriptsize
+%|R{1cm}R{0.2cm}R{0.5cm} \tiny
+\begin{tabular}{lrR{0.8cm}|rrr|rrr|rrr|rrr|}%|R{1cm}R{0.5cm}R{0.8cm}
+&&Max&\multicolumn{3}{c}{Grobkonzept 1}&\multicolumn{3}{c}{Grobkonzept 2}&\multicolumn{3}{c}{Grobkonzept 3}&\multicolumn{3}{c}{Grobkonzept 4}\\
+\textbf{Zielkriterium}&\vtcl{Gewichtung}&\vtcl{Nutzwert}&\vtcl{Wert}&\vtcl{Erfüllungsgrad}&\vtcl{Nutzwert}&\vtcl{Wert}&\vtcl{Erfüllungsgrad}&\vtcl{Nutzwert}&\vtcl{Wert}&\vtcl{Erfüllungsgrad}&\vtcl{Nutzwert}&\vtcl{Wert}&\vtcl{Erfüllungsgrad}&\vtcl{Nutzwert}\\
+\hline
+&&&&&&&&&&&&&&\\
+\rowcolor{hellgrau}
+\multicolumn{3}{l|}{\textbf{Elektrotechnik}}&\multicolumn{3}{r|}{}&\multicolumn{3}{r|}{}&\multicolumn{3}{r|}{}&\multicolumn{3}{r|}{}\\
+%										%G1 Wert		%G1 Erf.		G1 Nutz			%G2 Wert		%G2 Erf.		G2 Nutz			%G3 Wert		%G3 Erf.		G2 Nutz			%G4 Wert		%G4 Erf.		G4 Nutz
+1.1. Wirkungsgrad	&25\%		&1.25	&32\%		&1			&0.25			&67.2\%		&3			&0.75			&64.1\%		&3			&0.75			&80\%		&4			&1.00\\
+1.2. Leistung		&30\%		&1.50	&21.5kWh		&1			&0.33			&44.6kWh		&2			&0.66			&42.6kWh		&2			&0.66			&53.1kWh		&4			&1.20\\
+%&&&&&&&&&&&&&&\\
+\rowcolor{hellgrau}
+\multicolumn{3}{l|}{\textbf{Abwassertechnik}}&\multicolumn{3}{r|}{}&\multicolumn{3}{r|}{}&\multicolumn{3}{r|}{}&\multicolumn{3}{r|}{}\\
+%Verstopfungssicherheit&20\%		&1.000	&mässig		&2			&0.40			&mässig		&2			&0.4	0			&mässig		&2			&0.40			&mittel		&3			&0.60\\
+2.1. Platzbedarf		&25\%		&1.00	&mässig		&4			&1.00			&erhöht		&2			&0.50			&erhöht		&2			&0.50			&mässig		&4			&1.00\\
+%Wartung				&6.5\%		&0.325	&5			&2			&0.26			&3			&2			&0.26			&1			&4			&0.20			&1			&4			&0.20\\
+\rowcolor{hellgrau}
+\multicolumn{3}{l|}{\textbf{Allgemein}}&\multicolumn{3}{r|}{}&\multicolumn{3}{r|}{}&\multicolumn{3}{r|}{}&\multicolumn{3}{r|}{}\\
+3.1. Schlichtheit	&20\%		&1.00	&8			&4			&0.8	0			&14			&3			&0.60			&15			&3			&0.60			&10			&4			&0.80\\
+&&&&&&&&&&&&&&\\
+\hline
+Summe				&100.0\%		&5.000	&			&			&2.38			&			&			&2.51			&			&			&2.51			&			&			&4.00\\
+Erfüllungsgrad [\%]	&&100.0				&			&			&48				&			&			&50				&			&			&50				&			&			&80\\
+\multicolumn{3}{l}{\textbf{Rangfolge}}&\multicolumn{3}{r|}{\textbf{3}}&\multicolumn{3}{r|}{\textbf{2}}&\multicolumn{3}{r|}{\textbf{2}}&\multicolumn{3}{r|}{\textbf{1}}\\
+\multicolumn{15}{l}{\textbf{}}\\
+\multicolumn{15}{l}{\textbf{}}\\
+\end{tabular}
+}
+\rotatebox{90}{
+\scriptsize
+\begin{tabular}{lC{1.2cm}C{1.2cm}C{1.2cm}C{1.2cm}C{1.2cm}l}
+\multicolumn{7}{c}{\textbf{Erfüllungsgrad}}\\
+\hline
+&min.&&mittel&&max.&\\
+&\textbf{1}&\textbf{2}&\textbf{3}&\textbf{4}&\textbf{5}&Messgrösse\\
+\hline
+1.1. Wirkungsgrad				&<50&51-60&61-70&71-80&>81&\%\\
+1.2. Leistung					&<40&40-44&45-50&51-54&>55&kWh\\
+%2.1. Verstopfungssicherheit		&gering&mässig&mittel&erhöht&hoch&a)\\
+2.1. Platzbedarf					&hoch&erhöht&mittel&mässig&gering&Schätzung m\textsuperscript{2}\\
+%2.3. Wartung						&52-13&12-6&5-2&1&0&b)\\
+3.1. Schlichtheit				&>20&20-16&15-11&10-6&1-5&Anz. versch. Teile\\
+\end{tabular}
+}
+\caption{Nutzwertanalyse}\label{tab:nutzwertanalyse}
+\end{table}

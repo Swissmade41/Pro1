@@ -1,0 +1,73 @@
+\subsection{Grobkonzept 2} \label{subsec:grobkonzept2}
+\begin{table}[H]
+\small
+\begin{tabular}{>{\HY\RaggedRight}p{3cm} >{\HY\RaggedRight}p{3.6cm} >{\HY\RaggedRight}p{6.9cm} r}
+\hline
+\textbf{Bestandteil}&\textbf{Typ}&\textbf{Funktion}&\textbf{Anz.}\\
+\hline
+
+\rowcolor{hellgrau}
+\multicolumn{4}{l}{\textbf{Stromerzeugung}}\T\\
+Turbine&Pelton&Umwandlung in Rotationsenergie&1\\
+Generator&AC&Umwandlung in elektrische Energie&1\\
+Wechselrichter&&Einspeisung ins Stromnetz&1\B\\
+
+\rowcolor{hellgrau}
+\multicolumn{4}{l}{\textbf{Kontrollsystem}}\T\\
+PC&&Anlagesteuerung&1\\
+SPS&Beckhof&Analoge und Digitale Aus- und Eingänge&1\B\\
+
+\rowcolor{hellgrau}
+\multicolumn{4}{l}{\textbf{Abwassertechnik}}\T\\
+Tanks&&Zwischenspeicher für Abwasser&5\\
+Ablassventil&&Entlässt das Abwasser aus dem Tank&5\\
+Entlüftung&&Ermöglicht Luftaustausch, entlässt Gase&5\\
+Notüberlauf&&Verhindert, dass Tank zu voll wird&5\\
+Füllstandsensor&Vibronik Grenzschalter &Misst den Füllstand des Tanks&5\\
+Druckleitungen&&Können Druck standhalten&5\\
+Bypass für Turbine&&Ermöglicht Wartung der Turbine&1\\
+Bypass für Tanks&&Ermöglicht Wartung \& Reingung der Tanks&5\\
+Einwegventile&&Verhindern Rückfluss&4\B\\
+\hline
+\end{tabular}
+\caption{Bestandteilliste Grobkonzept 2}\label{tab:BLGrobkonzept2}
+\end{table}
+Im Grobkonzept 2 soll die Energieausbeutung gesteigert werden, indem das Abwasser zuerst in Tanks gespeichert wird, die all 14 Stockwerke eingebaut sind. In unserem Hochmausmodell (Park Avenue 432) gibt es nach 12 Stockwerken jeweils zwei Zwischenstockwerke, wo der Einbau möglich wäre. Wenn der Füllstandsensor im Tank erkennt, dass er voll ist, wird das Ventil geöffnet und das Abwasser fliesst durch die Druckleitung in den Keller, wo es eine Pelton-Turbine mit Generator antreibt. Die gewonnene elektrische Energie wird über einen Wechselrichter dem Stromnetz zugeführt. \\ 
+Das Abwasser füllt das Rohr komplett, so dass es keinen Luftwiderstand gibt, der es abbremst. So kann der Wirkungsgrad des Systems verbessert werden. Nur für eine Kurze Zeit, bis das Rohr komplett mit Wasser gefüllt ist, tritt Luftwiderstand auf.\\
+Da es im Modellhochhaus in den letzten 17 Stockwerken kein Zwischenstockwerk mehr gibt, bleibt das Abwasser dieser Stockwerke ungenutzt.\\
+Die baulichen Massnahmen, die nötig sind, um dieses System zu installieren sind beträchtlich. Es müssen Tanks eingebaut und Druckleitungen zur Turbine verlegt werden, welche im Keller installiert werden muss. Die bestehenden Abwasserleitungen müssen neu so verlegt werden, dass sie in die Tanks führen. Somit ist es eher für Neubauten geeignet als zur Nachrüstung.
+\newpage
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+  \begin{center}
+    \includegraphics[width=0.48\textwidth]{grobkonzept2}
+  \end{center}
+  \caption{Schema Grobkonzept 2}
+\end{wrapfigure}
+
+
+
+
+Um zu verhindern, dass es in den Tanks zu Ablagerungen kommt, ist der Boden der Tanks trichterförmig. Ablagerungen werden dadurch beim Öffnen des Ventils weggespült. Sollte es trotzdem nötig sein, die Tanks zu reinigen, gibt es einen Bypass, mit dem das Abwasser am Tank vorbeigeführt werden kann.
+Er kann dann entleert und gereinigt oder repariert werden. Auch die Turbine hat einen Bypass, der Wartungsarbeiten ermöglicht.
+
+Jeder Tank ist mit einem Überlauf ausgestattet, der verhindert, dass ein Tank zu voll wird wenn z.B. der Ablauf verstopft ist. Das überschüssige Abwasser wird dann in einem Rohr in die Fallleitung wenige Stockwerke tiefer geleitet. Von dort gelangt es in den nächsten Abwassertank. Der Füllstandsensor im Tank erkennt, wenn der Pegel zu hoch wird und sendet eine Warnung.
+Falls aus irgendeinem Grund mehr als eines der Ventile gleichzeitig geöffnet würde, könnte es zu einem Rückstau kommen, bei dem Abwasser durch die Druckleitungen vom höher gelegenen Tank in einen tieferen fliesst. Um dies zu verhindern, werden in den Druckleitungen Einwegventile eingebaut. Der höchstgelegene Tank benötigt kein solches Ventil. 
+
+Ein Kontrollsystem steuert die Anlage und überwacht die Energiegewinnung und schreitet bei Störungen ein. Die Gewonnene Energie kann ins Netz zurück gespeist werden.
+
+\bigskip
+
+\textbf{Vorteile:} 									\newline
++	Luftwiderstand nur während Füllung				\newline
++	Nur eine Turbine									\newline
++	Keine AC-DC-AC Umwandlung						\newline
++	geregelte Wasserflussmenge						\newline
+
+\textbf{Nachteile:}									\newline
+-	braucht sehr viel Platz 							\newline
+-	bauliche Massnahmen								\newline
+-	Luftwiderstand während Füllung					\newline
+- 	lange Druckleitungen								\newline
+-	Abwasser der untersten 17 Stockwerke ungenutzt	\newline
+\WFclear
