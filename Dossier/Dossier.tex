@@ -2,16 +2,15 @@
 \let\counterwithin\relax
 \documentclass[final]{fhnwreport}       %[mode] = draft or final
 \usepackage{color, colortbl}
-\usepackage{rotating, rotfloat,ragged2e, hyphenat, diagbox, wrapfig}
 \definecolor{grau}{gray}{0.9}
 \definecolor{hellgrau}{gray}{0.95}
-
-                                        %{class} = fhnwreport, article, 
+\pagestyle{empty}                             %{class} = fhnwreport, article, 
                                        %          report, book, beamer, standalone
 \input{header}			                %loads all packages, definitions and settings												
 \title{Kleinwasserkraftwerk}          	%Project Title
 \author{Dossier}          		%Document Type => Technical Report, ...
 \date{Windisch, 18.12.2018}             %Place and Date
+
 
 \begin{document}
 
@@ -23,7 +22,7 @@
 \vfill
 \begin{figure} [H]
 	\centering
-	\includegraphics[width=12cm]{parkAvenue.jpg}
+	\includegraphics[width=11cm]{parkAvenue.jpg}
 	\label{fig:Park_Avenue_432}
 \end{figure}
 \vfill
@@ -35,7 +34,7 @@
 Hochschule&Hochschule für Technik - FHNW\\
 Studiengang&Elektro- und Informationstechnik\\
 Autoren&Gruppe 4\\%Bachmann Lars \newline  Fischer Roni \newline Imhof Frank \newline Puschmann Pascal\\ 
-Betreuer&Pascal Buchschacher\\
+Betreuer&Pascal Buchschacher \newline Anita Gertiser\\
 Auftraggeber&Felix Jenni\\
 Version&1.0 %Normally not used!
 \end{tabular}
@@ -45,5 +44,6 @@ Version&1.0 %Normally not used!
 \clearpage
 \include{sections/ManagementSummary}
 \include{sections/Inhaltsverzeichnis}
+\include{sections/Titelblaetter}
 \include{sections/Reflexion}
 \end{document}
